@@ -63,3 +63,44 @@
   .searchbox {height:54px}
   .listcards {grid-template-columns:1fr}
 }
+
+/* Premium MW — layout e gerarchia visiva 2026-11 */
+:root { --bg:#e9ebf0;--panel:#f7f7f9;--card:#ffffff;--line:#d9dce4;--accent:#d90032;--accent-soft:#fff0f3;--ink:#191d29;--muted:#626b7b;--shadow:0 5px 18px rgba(28,35,52,.06) }
+:root[data-theme="dark"] { --bg:#10141c;--panel:#181e29;--card:#222a37;--line:#394253;--accent:#ff365d;--accent-soft:#39232e;--ink:#f4f5f8;--muted:#b4bdca;--shadow:0 8px 24px rgba(0,0,0,.19) }
+.main { max-width:none }
+.brandcard { border-radius:20px; border-color:var(--line); box-shadow:var(--shadow) }
+.familycard.family-text-only { min-height:94px; padding:20px 23px; }
+.familycard.family-text-only .cardbody { flex:1 }
+.familycard.family-text-only .cardbody strong { font-size:19px;letter-spacing:-.035em }
+.familycard.family-text-only .cardbody small { margin-top:6px }
+.familycard.family-text-only::before { content:""; width:4px; height:42px; flex:none; border-radius:4px; background:var(--accent);margin-right:4px }
+.modelcard { min-height:125px; padding:13px 17px }
+.modelcard .thumb { width:94px;height:94px;flex:none;border-radius:15px;background:var(--panel) }
+.modelcard .thumb img { width:100%;height:100%;object-fit:contain }
+.modelcard .cardbody strong { font-size:19px;letter-spacing:-.025em }
+.modelcard .cardbody small { margin-top:7px }
+.detailhead { padding:18px 22px;border:1px solid var(--line);border-radius:20px;background:var(--card);box-shadow:var(--shadow) }
+.detailhead .thumb { width:112px;height:112px;flex:none;border-radius:16px;background:var(--panel) }
+.detailhead .thumb img {width:100%;height:100%;object-fit:contain}
+.detailhead h2 { font-size:clamp(23px,2.3vw,30px);letter-spacing:-.045em }
+.memorybar {display:flex;gap:9px;overflow-x:auto;scrollbar-width:none;padding:3px 0 7px}
+.memorybar::-webkit-scrollbar {display:none}
+.memory {transition:background .16s ease,transform .16s ease}
+.memory:hover {transform:translateY(-1px)}
+.variant {min-height:88px;padding:15px 19px;gap:15px}
+.variantinfo {flex:1;min-width:0}
+.variantinfo small {display:flex;align-items:baseline;gap:9px;margin-top:6px}
+.pim-label {font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-weight:700}
+.pim-value {font-size:19px;letter-spacing:.025em;color:var(--ink);font-variant-numeric:tabular-nums}
+.copybtn {border-radius:11px;font-weight:750}
+.variant .copybtn {white-space:nowrap}
+@media(max-width:680px){
+ .familycard.family-text-only {padding:17px 15px;min-height:86px}
+ .modelcard {min-height:108px;padding:11px}
+ .modelcard .thumb {width:76px;height:76px}
+ .detailhead {padding:14px}
+ .detailhead .thumb {width:86px;height:86px}
+ .variant {padding:13px 12px;gap:10px}
+ .pim-value {font-size:17px}
+ .variant .copybtn {font-size:12px;padding:10px}
+}
