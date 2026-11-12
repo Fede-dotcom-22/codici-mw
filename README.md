@@ -1,16 +1,17 @@
-# Codici MW 2.0
+# Codici MW 2.0 — responsive
 
-PWA gratuita per cercare rapidamente i codici PIM MediaWorld a sei cifre di smartphone, smartwatch, sportwatch e smartband.
+Caricare **tutti i file e cartelle contenuti** in questa cartella nella radice del repository GitHub Pages. Sostituire i file esistenti quando richiesto.
 
-## Installazione su GitHub Pages
+## Interfaccia
+- Desktop: barra laterale, ricerca ampia, griglia 2–3 colonne.
+- Smartphone: navigazione inferiore, categorie scorrevoli, schede a colonna singola.
+- Tablet: layout intermedio.
+- Icone ricavate dall'immagine originale fornita dall'utente (sorgente molto piccola: qualità limitata).
+- Le fotografie dei prodotti sono mostrate se il campo `image` contiene un URL valido; nessuna foto è inventata o aggiunta al catalogo dimostrativo.
+- I marchi sono rappresentati da etichette testuali, non da loghi ufficiali.
 
-Carica **il contenuto** di questa cartella nella radice del repository `codici-mw` (non la cartella contenitore). In Settings > Pages scegli Deploy from a branch, main, /(root).
+## Aggiunta manuale
+Aprire `admin/`, compilare il modulo, scaricare `catalogo.json` e sostituirlo su GitHub. La pagina admin è pubblica, ma non ha accesso di scrittura al repository. Evitare modifiche concorrenti: scaricare sempre dal catalogo aggiornato prima di aggiungere una variante.
 
-## Catalogo
-
-`catalogo.json` contiene un modello dimostrativo con due varianti PIM. Verificare i dati prima dell'uso operativo. Per aggiungere una variante aprire `admin/`, compilare il modulo e scaricare `catalogo.json`, poi sostituire il file nel repository con un commit. **La pagina admin è pubblica e non richiede autenticazione: non scrive sul repository, ma prepara solo un file locale.** Solo chi ha i permessi GitHub può pubblicare.
-
-
-## Limiti
-
-Nessuno scraping e nessuna ricerca automatica di nuovi PIM. La sincronizzazione è la lettura del JSON pubblicato, non un database con scrittura diretta. Non caricare dati del collega senza autorizzazione. L'importazione manuale è a una variante per volta; per più varianti ripetere il processo dopo aver pubblicato la precedente o usare un futuro editor multi-variante.
+## Limitazioni
+Catalogo dimostrativo: un modello e due PIM. Non importare dati del collega senza autorizzazione. Nessuno scraping automatico. Non è implementato un sistema di autenticazione admin né la sincronizzazione offline.
