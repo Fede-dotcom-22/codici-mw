@@ -10,9 +10,6 @@ Carica **il contenuto** di questa cartella nella radice del repository `codici-m
 
 `catalogo.json` contiene un modello dimostrativo con due varianti PIM. Verificare i dati prima dell'uso operativo. Per aggiungere una variante aprire `admin/`, compilare il modulo e scaricare `catalogo.json`, poi sostituire il file nel repository con un commit. **La pagina admin è pubblica e non richiede autenticazione: non scrive sul repository, ma prepara solo un file locale.** Solo chi ha i permessi GitHub può pubblicare.
 
-## Immagini e marchi
-
-L'interfaccia prevede un campo `image` per ogni modello: usare soltanto URL o immagini per cui si possiedono i diritti di utilizzo. In mancanza di foto compare un segnaposto elegante. I marchi sono visualizzati come nomi testuali, senza loghi non autorizzati. L'icona dell'app deriva dall'immagine fornita dall'utente (originale di piccole dimensioni: potrebbe risultare poco nitida su schermi ad alta risoluzione).
 
 ## Limiti
 
