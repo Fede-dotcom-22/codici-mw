@@ -1,7 +1,18 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-11-12",
   "products": [
-    {"id":"apple-iphone-16e","brand":"Apple","model":"iPhone 16e","category":"smartphone","series":"iPhone 16","image":"","variants":[{"pim":"387748","storage":"128 GB","color":"Nero"},{"pim":"387749","storage":"128 GB","color":"Bianco"}]}
+    {
+      "id": "apple-iphone-16e",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 16",
+      "model": "iPhone 16e",
+      "image": "",
+      "variants": [
+        {"storage": "128 GB", "color": "Nero", "pim": "387748"},
+        {"storage": "128 GB", "color": "Bianco", "pim": "387749"}
+      ]
+    }
   ]
 }
