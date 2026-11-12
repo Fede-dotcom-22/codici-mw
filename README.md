@@ -1,15 +1,12 @@
-# Codici MW 2.0
+# Codici MW 2.0 — UI Gemini integrata
 
-Catalogo PIM statico su GitHub Pages. Quattro categorie: smartphone, smartwatch, sportwatch e smartband. Ricerca per modello/marca/memoria/colore/PIM, percorso categoria → marchio → famiglia → modello → memoria → colore/PIM. Tema automatico/chiaro/scuro. Preferiti locali.
+Interfaccia basata sul prototipo HTML approvato. `index.html` è la nuova applicazione; `catalogo.json` contiene i soli PIM ufficialmente inseriti.
 
-## Pubblicazione
-Caricare **il contenuto** di questa cartella nella radice del repository GitHub. GitHub Pages: Settings → Pages → Deploy from a branch → main → /(root).
+- Nessun codice PIM dimostrativo viene caricato.
+- Ricerca, categorie, navigazione, memoria, copia, preferiti e tema sono nell’interfaccia.
+- I preferiti e gli inserimenti manuali sono salvati nel localStorage del browser, non condivisi con altri dispositivi.
+- Per pubblicare aggiunte condivise usare `/admin/` ed effettuare il commit del `catalogo.json` scaricato.
+- Il prototipo utilizza Tailwind CSS via CDN e Google Fonts; richiede una connessione internet per gli stili e i font. Per una futura release offline, compilare Tailwind localmente.
+- I disegni dei dispositivi sono illustrazioni SVG, non fotografie ufficiali.
 
-## Aggiornare il catalogo
-Aprire `/admin/`, inserire un PIM e scaricare `catalogo.json`. Su GitHub aprire `catalogo.json` → Edit → sostituire l'intero contenuto con quello scaricato (o caricare il file aggiornato), poi Commit. Questo passaggio è manuale; il modulo non può scrivere direttamente sul repository. Evitare di lavorare contemporaneamente in più schede amministrative, perché un file scaricato da una copia vecchia può sovrascrivere aggiunte recenti.
-
-## Immagini e loghi
-Il campo `image` dei prodotti è facoltativo; se vuoto compare un segnaposto. Utilizzare solo immagini che si è autorizzati a pubblicare. I marchi, nella prima versione, sono visualizzati come wordmark testuali: non sono loghi ufficiali. Le due varianti nel catalogo sono esempi da verificare prima dell'uso operativo.
-
-## Importazione dal collega
-Non inclusa. Importare soltanto dopo aver ottenuto autorizzazione e verificato la correttezza dei PIM.
+Pubblicazione: caricare il contenuto di questa cartella nella root del repository GitHub Pages.
