@@ -36,7 +36,7 @@
       "id": "p-187824",
       "brand": "Apple",
       "category": "smartphone",
-      "series": "iPhone",
+      "series": "iPhone 15",
       "model": "iPhone 15",
       "image": "",
       "variants": [
@@ -213,21 +213,6 @@
       ]
     },
     {
-      "id": "p-529407",
-      "brand": "Apple",
-      "category": "smartphone",
-      "series": "iPhone 17",
-      "model": "iPhone 17 (SMART)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "256 GB",
-          "color": "BK",
-          "pim": "529407"
-        }
-      ]
-    },
-    {
       "id": "p-393509",
       "brand": "Apple",
       "category": "smartphone",
@@ -274,21 +259,6 @@
           "storage": "1 TB",
           "color": "Celeste",
           "pim": "394734"
-        }
-      ]
-    },
-    {
-      "id": "p-529541",
-      "brand": "Apple",
-      "category": "smartphone",
-      "series": "iPhone Air",
-      "model": "iPhone Air (SMART)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "256 GB",
-          "color": "BL",
-          "pim": "529541"
         }
       ]
     },
@@ -369,51 +339,6 @@
           "storage": "512 GB",
           "color": "BL",
           "pim": "392557"
-        }
-      ]
-    },
-    {
-      "id": "p-224703",
-      "brand": "Samsung",
-      "category": "smartphone",
-      "series": "Galaxy A",
-      "model": "Galaxy A15",
-      "image": "",
-      "variants": [
-        {
-          "storage": "128 GB",
-          "color": "BL",
-          "pim": "224703"
-        }
-      ]
-    },
-    {
-      "id": "p-399118",
-      "brand": "Samsung",
-      "category": "smartphone",
-      "series": "Galaxy A",
-      "model": "Galaxy A15 5G",
-      "image": "",
-      "variants": [
-        {
-          "storage": "128 GB",
-          "color": "BB",
-          "pim": "399118"
-        }
-      ]
-    },
-    {
-      "id": "p-368914",
-      "brand": "Samsung",
-      "category": "smartphone",
-      "series": "Galaxy",
-      "model": "A15 LTE (SMART)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "128 GB",
-          "color": "BK",
-          "pim": "368914"
         }
       ]
     },
@@ -506,8 +431,8 @@
       "id": "p-598620",
       "brand": "Samsung",
       "category": "smartphone",
-      "series": "Galaxy",
-      "model": "A17 4G",
+      "series": "Galaxy A",
+      "model": "Galaxy A17 4G",
       "image": "",
       "variants": [
         {
@@ -938,31 +863,6 @@
       ]
     },
     {
-      "id": "p-420370",
-      "brand": "Samsung",
-      "category": "smartphone",
-      "series": "Galaxy S",
-      "model": "Galaxy S25 Ultra (TIM)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "512 GB",
-          "color": "BK",
-          "pim": "420370"
-        },
-        {
-          "storage": "512 GB",
-          "color": "SV",
-          "pim": "420371"
-        },
-        {
-          "storage": "512 GB",
-          "color": "BL",
-          "pim": "420374"
-        }
-      ]
-    },
-    {
       "id": "p-564040",
       "brand": "Samsung",
       "category": "smartphone",
@@ -1098,21 +998,6 @@
       ]
     },
     {
-      "id": "p-574851",
-      "brand": "Samsung",
-      "category": "smartphone",
-      "series": "Galaxy S",
-      "model": "Galaxy S26 Ultra 5G (SMART)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "256 GB",
-          "color": "BL",
-          "pim": "574851"
-        }
-      ]
-    },
-    {
       "id": "p-498694",
       "brand": "Samsung",
       "category": "smartphone",
@@ -1243,21 +1128,6 @@
       ]
     },
     {
-      "id": "p-551618",
-      "brand": "Xiaomi",
-      "category": "smartphone",
-      "series": "Redmi",
-      "model": "Redmi A5 +Redmi Buds (TIM)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "128 GB",
-          "color": "GO",
-          "pim": "551618"
-        }
-      ]
-    },
-    {
       "id": "p-545563",
       "brand": "Xiaomi",
       "category": "smartphone",
@@ -1269,36 +1139,6 @@
           "storage": "4+128 GB",
           "color": "GN",
           "pim": "545563"
-        }
-      ]
-    },
-    {
-      "id": "p-415735",
-      "brand": "Xiaomi",
-      "category": "smartphone",
-      "series": "Redmi",
-      "model": "Redmi Note 14",
-      "image": "",
-      "variants": [
-        {
-          "storage": "Standard",
-          "color": "BL",
-          "pim": "415735"
-        },
-        {
-          "storage": "128 GB",
-          "color": "BK",
-          "pim": "420304"
-        },
-        {
-          "storage": "128 GB",
-          "color": "GN",
-          "pim": "420308"
-        },
-        {
-          "storage": "Standard",
-          "color": "BK",
-          "pim": "415744"
         }
       ]
     },
@@ -1413,41 +1253,6 @@
       ]
     },
     {
-      "id": "p-415753",
-      "brand": "Xiaomi",
-      "category": "smartphone",
-      "series": "Redmi",
-      "model": "Redmi Note 14 Pro",
-      "image": "",
-      "variants": [
-        {
-          "storage": "Standard",
-          "color": "PU",
-          "pim": "415753"
-        },
-        {
-          "storage": "Standard",
-          "color": "BK",
-          "pim": "415759"
-        }
-      ]
-    },
-    {
-      "id": "p-415745",
-      "brand": "Xiaomi",
-      "category": "smartphone",
-      "series": "Redmi",
-      "model": "Redmi Note 14 5G",
-      "image": "",
-      "variants": [
-        {
-          "storage": "Standard",
-          "color": "BK",
-          "pim": "415745"
-        }
-      ]
-    },
-    {
       "id": "p-565493",
       "brand": "Xiaomi",
       "category": "smartphone",
@@ -1518,26 +1323,6 @@
       ]
     },
     {
-      "id": "p-419653",
-      "brand": "Xiaomi",
-      "category": "smartphone",
-      "series": "Redmi",
-      "model": "Redmi Note 14 Pro 5G",
-      "image": "",
-      "variants": [
-        {
-          "storage": "Standard",
-          "color": "BK",
-          "pim": "419653"
-        },
-        {
-          "storage": "Standard",
-          "color": "PU",
-          "pim": "415769"
-        }
-      ]
-    },
-    {
       "id": "p-557260",
       "brand": "Xiaomi",
       "category": "smartphone",
@@ -1564,21 +1349,6 @@
           "storage": "Standard",
           "color": "BK",
           "pim": "415195"
-        }
-      ]
-    },
-    {
-      "id": "p-415779",
-      "brand": "Xiaomi",
-      "category": "smartphone",
-      "series": "Redmi",
-      "model": "Redmi Note 14 Pro+ 5G",
-      "image": "",
-      "variants": [
-        {
-          "storage": "Standard",
-          "color": "PU",
-          "pim": "415779"
         }
       ]
     },
@@ -2258,21 +2028,6 @@
       ]
     },
     {
-      "id": "p-554088",
-      "brand": "Oppo",
-      "category": "smartphone",
-      "series": "OPPO A",
-      "model": "A6 Pro 5G (SMART)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "8+256 GB",
-          "color": "SV",
-          "pim": "554088"
-        }
-      ]
-    },
-    {
       "id": "p-559839",
       "brand": "Oppo",
       "category": "smartphone",
@@ -2768,26 +2523,6 @@
       ]
     },
     {
-      "id": "p-556863",
-      "brand": "Honor",
-      "category": "smartphone",
-      "series": "HONOR",
-      "model": "X5c Plus (TIM)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "4+128 GB",
-          "color": "BK",
-          "pim": "556863"
-        },
-        {
-          "storage": "Standard",
-          "color": "BK",
-          "pim": "596000"
-        }
-      ]
-    },
-    {
       "id": "p-521209",
       "brand": "Honor",
       "category": "smartphone",
@@ -2824,36 +2559,6 @@
           "storage": "8+256 GB",
           "color": "GO",
           "pim": "521216"
-        }
-      ]
-    },
-    {
-      "id": "p-434813",
-      "brand": "Honor",
-      "category": "smartphone",
-      "series": "HONOR",
-      "model": "Honor 400 Lite (SMART)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "Standard",
-          "color": "BK",
-          "pim": "434813"
-        }
-      ]
-    },
-    {
-      "id": "p-593444",
-      "brand": "Honor",
-      "category": "smartphone",
-      "series": "HONOR",
-      "model": "Honor 600 Smart (SMART)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "128 GB",
-          "color": "BK",
-          "pim": "593444"
         }
       ]
     },
@@ -3258,26 +2963,6 @@
       ]
     },
     {
-      "id": "p-554536",
-      "brand": "Motorola",
-      "category": "smartphone",
-      "series": "Moto / Edge / Razr",
-      "model": "Moto G86 5G (TIM)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "8+256 GB",
-          "color": "SV",
-          "pim": "554536"
-        },
-        {
-          "storage": "8+256 GB",
-          "color": "GO",
-          "pim": "554538"
-        }
-      ]
-    },
-    {
       "id": "p-564386",
       "brand": "Motorola",
       "category": "smartphone",
@@ -3354,26 +3039,6 @@
           "storage": "12+512 GB",
           "color": "BL",
           "pim": "369523"
-        }
-      ]
-    },
-    {
-      "id": "p-551614",
-      "brand": "Motorola",
-      "category": "smartphone",
-      "series": "Moto / Edge / Razr",
-      "model": "Edge 70 (TIM)",
-      "image": "",
-      "variants": [
-        {
-          "storage": "Standard",
-          "color": "GY",
-          "pim": "551614"
-        },
-        {
-          "storage": "Standard",
-          "color": "GN",
-          "pim": "551615"
         }
       ]
     },
