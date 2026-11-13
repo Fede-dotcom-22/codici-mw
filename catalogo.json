@@ -1,17 +1,3640 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-12",
+  "updatedAt": "2026-11-13",
   "products": [
     {
-      "id": "apple-iphone-16e",
+      "id": "p-387748",
       "brand": "Apple",
       "category": "smartphone",
       "series": "iPhone 16",
       "model": "iPhone 16e",
       "image": "",
       "variants": [
-        {"storage": "128 GB", "color": "Nero", "pim": "387748"},
-        {"storage": "128 GB", "color": "Bianco", "pim": "387749"}
+        {
+          "storage": "128 GB",
+          "color": "Nero",
+          "pim": "387748"
+        },
+        {
+          "storage": "128 GB",
+          "color": "Bianco",
+          "pim": "387749"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Nero",
+          "pim": "387750"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Nero",
+          "pim": "387752"
+        }
+      ]
+    },
+    {
+      "id": "p-187824",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone",
+      "model": "iPhone 15",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BL",
+          "pim": "187824"
+        },
+        {
+          "storage": "128 GB",
+          "color": "Nero",
+          "pim": "187821"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "187828"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "187836"
+        }
+      ]
+    },
+    {
+      "id": "p-394756",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 17",
+      "model": "iPhone 17e",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "WH",
+          "pim": "394756"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Nero",
+          "pim": "394755"
+        }
+      ]
+    },
+    {
+      "id": "p-387644",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 16",
+      "model": "iPhone 16",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "387644"
+        },
+        {
+          "storage": "128 GB",
+          "color": "WH",
+          "pim": "387651"
+        },
+        {
+          "storage": "128 GB",
+          "color": "BL",
+          "pim": "387654"
+        },
+        {
+          "storage": "128 GB",
+          "color": "GN",
+          "pim": "387655"
+        },
+        {
+          "storage": "128 GB",
+          "color": "Rosa",
+          "pim": "387652"
+        }
+      ]
+    },
+    {
+      "id": "p-387683",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 16",
+      "model": "iPhone 16 Plus",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "387683"
+        },
+        {
+          "storage": "128 GB",
+          "color": "BL",
+          "pim": "387686"
+        },
+        {
+          "storage": "128 GB",
+          "color": "Verde Acqua",
+          "pim": "387688"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "387696"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Bianco",
+          "pim": "387697"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Blu Oltremare",
+          "pim": "387699"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Verde Acqua",
+          "pim": "387700"
+        }
+      ]
+    },
+    {
+      "id": "p-389194",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 17",
+      "model": "iPhone 17",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "389194"
+        },
+        {
+          "storage": "256 GB",
+          "color": "WH",
+          "pim": "389195"
+        },
+        {
+          "storage": "256 GB",
+          "color": "LAV",
+          "pim": "389198"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GN",
+          "pim": "389199"
+        },
+        {
+          "storage": "256 GB",
+          "color": "AZ",
+          "pim": "389196"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Bianco",
+          "pim": "389227"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Lavanda",
+          "pim": "390974"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Salvia",
+          "pim": "391203"
+        }
+      ]
+    },
+    {
+      "id": "p-529407",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 17",
+      "model": "iPhone 17 (SMART)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "529407"
+        }
+      ]
+    },
+    {
+      "id": "p-393509",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone Air",
+      "model": "iPhone Air",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "GD",
+          "pim": "393509"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "394703"
+        },
+        {
+          "storage": "1 TB",
+          "color": "WH",
+          "pim": "394730"
+        },
+        {
+          "storage": "1 TB",
+          "color": "GD",
+          "pim": "394733"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BL",
+          "pim": "394707"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Oro Chiaro",
+          "pim": "394706"
+        },
+        {
+          "storage": "1 TB",
+          "color": "Nero Siderale",
+          "pim": "394729"
+        },
+        {
+          "storage": "1 TB",
+          "color": "Celeste",
+          "pim": "394734"
+        }
+      ]
+    },
+    {
+      "id": "p-529541",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone Air",
+      "model": "iPhone Air (SMART)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "529541"
+        }
+      ]
+    },
+    {
+      "id": "p-391204",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 17",
+      "model": "iPhone 17 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "SL",
+          "pim": "391204"
+        },
+        {
+          "storage": "256 GB",
+          "color": "OR",
+          "pim": "391205"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "391206"
+        },
+        {
+          "storage": "512 GB",
+          "color": "SL",
+          "pim": "391500"
+        },
+        {
+          "storage": "512 GB",
+          "color": "OR",
+          "pim": "391501"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BL",
+          "pim": "391502"
+        }
+      ]
+    },
+    {
+      "id": "p-391513",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 17",
+      "model": "iPhone 17 Pro Max",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "SL",
+          "pim": "391513"
+        },
+        {
+          "storage": "256 GB",
+          "color": "OR",
+          "pim": "391672"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "391720"
+        },
+        {
+          "storage": "512 GB",
+          "color": "SL",
+          "pim": "391721"
+        },
+        {
+          "storage": "512 GB",
+          "color": "OR",
+          "pim": "391722"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BL",
+          "pim": "392557"
+        }
+      ]
+    },
+    {
+      "id": "p-224703",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A15",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BL",
+          "pim": "224703"
+        }
+      ]
+    },
+    {
+      "id": "p-399118",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A15 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BB",
+          "pim": "399118"
+        }
+      ]
+    },
+    {
+      "id": "p-368914",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy",
+      "model": "A15 LTE (SMART)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "368914"
+        }
+      ]
+    },
+    {
+      "id": "p-408336",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A16",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4/128 GB",
+          "color": "GN",
+          "pim": "408336"
+        },
+        {
+          "storage": "4/128 GB",
+          "color": "BK",
+          "pim": "431292"
+        }
+      ]
+    },
+    {
+      "id": "p-411110",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A16 LTE",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4/128 GB",
+          "color": "BK",
+          "pim": "411110"
+        },
+        {
+          "storage": "4/128 GB",
+          "color": "GY",
+          "pim": "411118"
+        }
+      ]
+    },
+    {
+      "id": "p-403374",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A16 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4/128 GB",
+          "color": "GN",
+          "pim": "403374"
+        }
+      ]
+    },
+    {
+      "id": "p-498241",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A17 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "498241"
+        },
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "498231"
+        },
+        {
+          "storage": "128 GB",
+          "color": "GY",
+          "pim": "498237"
+        },
+        {
+          "storage": "128 GB",
+          "color": "BL",
+          "pim": "498240"
+        }
+      ]
+    },
+    {
+      "id": "p-598620",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy",
+      "model": "A17 4G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "598620"
+        }
+      ]
+    },
+    {
+      "id": "p-425202",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A26 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "WH",
+          "pim": "425202"
+        },
+        {
+          "storage": "256 GB",
+          "color": "MI",
+          "pim": "425201"
+        }
+      ]
+    },
+    {
+      "id": "p-586061",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A27 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "586061"
+        },
+        {
+          "storage": "128 GB",
+          "color": "PK",
+          "pim": "586072"
+        },
+        {
+          "storage": "128 GB",
+          "color": "BL",
+          "pim": "586074"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "586071"
+        }
+      ]
+    },
+    {
+      "id": "p-425191",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A36 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "425191"
+        }
+      ]
+    },
+    {
+      "id": "p-425181",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A56 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "OL",
+          "pim": "425181"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "425177"
+        },
+        {
+          "storage": "256 GB",
+          "color": "OL",
+          "pim": "425187"
+        }
+      ]
+    },
+    {
+      "id": "p-573351",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A37 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "CH",
+          "pim": "573351"
+        },
+        {
+          "storage": "128 GB",
+          "color": "GG",
+          "pim": "573361"
+        },
+        {
+          "storage": "128 GB",
+          "color": "WH",
+          "pim": "573369"
+        },
+        {
+          "storage": "256 GB",
+          "color": "CH",
+          "pim": "573353"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GG",
+          "pim": "573363"
+        },
+        {
+          "storage": "256 GB",
+          "color": "WH",
+          "pim": "573370"
+        },
+        {
+          "storage": "128 GB",
+          "color": "Lavanda",
+          "pim": "573364"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Lavanda",
+          "pim": "573368"
+        }
+      ]
+    },
+    {
+      "id": "p-573319",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy A",
+      "model": "Galaxy A57 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "NA",
+          "pim": "573319"
+        },
+        {
+          "storage": "128 GB",
+          "color": "GY",
+          "pim": "573321"
+        },
+        {
+          "storage": "128 GB",
+          "color": "BL",
+          "pim": "573343"
+        },
+        {
+          "storage": "128 GB",
+          "color": "LI",
+          "pim": "573348"
+        },
+        {
+          "storage": "256 GB",
+          "color": "NA",
+          "pim": "573320"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GY",
+          "pim": "573323"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "573347"
+        },
+        {
+          "storage": "256 GB",
+          "color": "LI",
+          "pim": "573349"
+        }
+      ]
+    },
+    {
+      "id": "p-583946",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S25 FE",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "583946"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Blu Navy",
+          "pim": "583947"
+        }
+      ]
+    },
+    {
+      "id": "p-412437",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S25+",
+      "image": "",
+      "variants": [
+        {
+          "storage": "512 GB",
+          "color": "SV",
+          "pim": "412437"
+        },
+        {
+          "storage": "512 GB",
+          "color": "NA",
+          "pim": "412435"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BB",
+          "pim": "528526"
+        },
+        {
+          "storage": "256 GB",
+          "color": "SV",
+          "pim": "412436"
+        }
+      ]
+    },
+    {
+      "id": "p-429813",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S25 Edge",
+      "image": "",
+      "variants": [
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "429813"
+        }
+      ]
+    },
+    {
+      "id": "p-412447",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S25",
+      "image": "",
+      "variants": [
+        {
+          "storage": "512 GB",
+          "color": "NA",
+          "pim": "412447"
+        },
+        {
+          "storage": "512 GB",
+          "color": "SV",
+          "pim": "412451"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "412439"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GN",
+          "pim": "412442"
+        },
+        {
+          "storage": "256 GB",
+          "color": "NA",
+          "pim": "412446"
+        },
+        {
+          "storage": "256 GB",
+          "color": "SV",
+          "pim": "412449"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BLBK",
+          "pim": "527268"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BB",
+          "pim": "528524"
+        }
+      ]
+    },
+    {
+      "id": "p-498695",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy Z",
+      "model": "Galaxy Z Flip7",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "498695"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "457074"
+        }
+      ]
+    },
+    {
+      "id": "p-412327",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S25 Ultra",
+      "image": "",
+      "variants": [
+        {
+          "storage": "1 TB",
+          "color": "BK",
+          "pim": "412327"
+        },
+        {
+          "storage": "256 GB",
+          "color": "WH",
+          "pim": "412422"
+        },
+        {
+          "storage": "512 GB",
+          "color": "WH",
+          "pim": "412423"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "412393"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GY",
+          "pim": "412412"
+        },
+        {
+          "storage": "1 TB",
+          "color": "GY",
+          "pim": "412420"
+        },
+        {
+          "storage": "1 TB",
+          "color": "BL",
+          "pim": "412411"
+        }
+      ]
+    },
+    {
+      "id": "p-564048",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S26",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "WH",
+          "pim": "564048"
+        },
+        {
+          "storage": "256 GB",
+          "color": "VI",
+          "pim": "564051"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "564053"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "564055"
+        },
+        {
+          "storage": "512 GB",
+          "color": "WH",
+          "pim": "564050"
+        },
+        {
+          "storage": "512 GB",
+          "color": "VI",
+          "pim": "564052"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BL",
+          "pim": "564054"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "564057"
+        }
+      ]
+    },
+    {
+      "id": "p-420370",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S25 Ultra (TIM)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "420370"
+        },
+        {
+          "storage": "512 GB",
+          "color": "SV",
+          "pim": "420371"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BL",
+          "pim": "420374"
+        }
+      ]
+    },
+    {
+      "id": "p-564040",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S26+",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "WH",
+          "pim": "564040"
+        },
+        {
+          "storage": "256 GB",
+          "color": "VI",
+          "pim": "564042"
+        },
+        {
+          "storage": "512 GB",
+          "color": "WH",
+          "pim": "564041"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "564047"
+        }
+      ]
+    },
+    {
+      "id": "p-593090",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy Z",
+      "model": "Galaxy Z Flip8",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "GR",
+          "pim": "593090"
+        },
+        {
+          "storage": "256 GB",
+          "color": "PK",
+          "pim": "593092"
+        },
+        {
+          "storage": "512 GB",
+          "color": "GR",
+          "pim": "593091"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Crema",
+          "pim": "593088"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Crema",
+          "pim": "593089"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Rosa",
+          "pim": "593094"
+        }
+      ]
+    },
+    {
+      "id": "p-564017",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S26 Ultra",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "WH",
+          "pim": "564017"
+        },
+        {
+          "storage": "256 GB",
+          "color": "VI",
+          "pim": "564023"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "564027"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "564035"
+        },
+        {
+          "storage": "512 GB",
+          "color": "WH",
+          "pim": "564018"
+        },
+        {
+          "storage": "512 GB",
+          "color": "VI",
+          "pim": "564025"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BL",
+          "pim": "564033"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "564036"
+        },
+        {
+          "storage": "1 TB",
+          "color": "VI",
+          "pim": "564026"
+        },
+        {
+          "storage": "1 TB",
+          "color": "BL",
+          "pim": "564034"
+        },
+        {
+          "storage": "1 TB",
+          "color": "BK",
+          "pim": "564038"
+        }
+      ]
+    },
+    {
+      "id": "p-574851",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy S",
+      "model": "Galaxy S26 Ultra 5G (SMART)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BL",
+          "pim": "574851"
+        }
+      ]
+    },
+    {
+      "id": "p-498694",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy Z",
+      "model": "Galaxy Z Fold7",
+      "image": "",
+      "variants": [
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "498694"
+        },
+        {
+          "storage": "1 TB",
+          "color": "Nero Intenso",
+          "pim": "457060"
+        }
+      ]
+    },
+    {
+      "id": "p-593098",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy Z",
+      "model": "Galaxy Z Fold8",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "GR",
+          "pim": "593098"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Crema",
+          "pim": "593095"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Crema",
+          "pim": "593096"
+        },
+        {
+          "storage": "1 TB",
+          "color": "Crema",
+          "pim": "593097"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Grafite",
+          "pim": "593099"
+        },
+        {
+          "storage": "1 TB",
+          "color": "Grafite",
+          "pim": "593100"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Lavanda",
+          "pim": "593101"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Lavanda",
+          "pim": "593102"
+        },
+        {
+          "storage": "1 TB",
+          "color": "Lavanda",
+          "pim": "593103"
+        }
+      ]
+    },
+    {
+      "id": "p-593080",
+      "brand": "Samsung",
+      "category": "smartphone",
+      "series": "Galaxy Z",
+      "model": "Galaxy Z Fold8 Ultra",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "GR",
+          "pim": "593080"
+        },
+        {
+          "storage": "256 GB",
+          "color": "VI",
+          "pim": "593084"
+        },
+        {
+          "storage": "512 GB",
+          "color": "VI",
+          "pim": "593086"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Crema",
+          "pim": "593077"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Crema",
+          "pim": "593078"
+        },
+        {
+          "storage": "1 TB",
+          "color": "Crema",
+          "pim": "593079"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Grafite",
+          "pim": "593081"
+        },
+        {
+          "storage": "1 TB",
+          "color": "Grafite",
+          "pim": "593082"
+        },
+        {
+          "storage": "1 TB",
+          "color": "Ombra Viola",
+          "pim": "593087"
+        }
+      ]
+    },
+    {
+      "id": "p-551618",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi A5 +Redmi Buds (TIM)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "GO",
+          "pim": "551618"
+        }
+      ]
+    },
+    {
+      "id": "p-545563",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi A5",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "GN",
+          "pim": "545563"
+        }
+      ]
+    },
+    {
+      "id": "p-415735",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 14",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BL",
+          "pim": "415735"
+        },
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "420304"
+        },
+        {
+          "storage": "128 GB",
+          "color": "GN",
+          "pim": "420308"
+        },
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "415744"
+        }
+      ]
+    },
+    {
+      "id": "p-576413",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi A7 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+64 GB",
+          "color": "BK",
+          "pim": "576413"
+        },
+        {
+          "storage": "4+64 GB",
+          "color": "BL",
+          "pim": "576415"
+        },
+        {
+          "storage": "4+128 GB",
+          "color": "BK",
+          "pim": "576519"
+        },
+        {
+          "storage": "4+128 GB",
+          "color": "BL",
+          "pim": "576520"
+        }
+      ]
+    },
+    {
+      "id": "p-467135",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi 15C",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "GY",
+          "pim": "467135"
+        },
+        {
+          "storage": "4+128 GB",
+          "color": "GN",
+          "pim": "467136"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "GY",
+          "pim": "467151"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "OR",
+          "pim": "496008"
+        }
+      ]
+    },
+    {
+      "id": "p-498229",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi 15",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "PU",
+          "pim": "498229"
+        }
+      ]
+    },
+    {
+      "id": "p-563288",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 15",
+      "image": "",
+      "variants": [
+        {
+          "storage": "6+128 GB",
+          "color": "BK",
+          "pim": "563288"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "557247"
+        }
+      ]
+    },
+    {
+      "id": "p-415467",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Note 14 Pro 5G +Watch 5Lite",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "415467"
+        }
+      ]
+    },
+    {
+      "id": "p-415753",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 14 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "PU",
+          "pim": "415753"
+        },
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "415759"
+        }
+      ]
+    },
+    {
+      "id": "p-415745",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 14 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "415745"
+        }
+      ]
+    },
+    {
+      "id": "p-565493",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 15 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "6+128 GB",
+          "color": "BL",
+          "pim": "565493"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "557278"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "PU",
+          "pim": "557285"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "BL",
+          "pim": "557287"
+        }
+      ]
+    },
+    {
+      "id": "p-595175",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi 17",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "BK",
+          "pim": "595175"
+        },
+        {
+          "storage": "4+128 GB",
+          "color": "BL",
+          "pim": "595184"
+        },
+        {
+          "storage": "4+128 GB",
+          "color": "GN",
+          "pim": "595186"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "BK",
+          "pim": "595189"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "BL",
+          "pim": "595190"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "GN",
+          "pim": "595192"
+        }
+      ]
+    },
+    {
+      "id": "p-419653",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 14 Pro 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "419653"
+        },
+        {
+          "storage": "Standard",
+          "color": "PU",
+          "pim": "415769"
+        }
+      ]
+    },
+    {
+      "id": "p-557260",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 15 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "557260"
+        }
+      ]
+    },
+    {
+      "id": "p-415195",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Note 14 Pro+ + Watch 5Lite",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "415195"
+        }
+      ]
+    },
+    {
+      "id": "p-415779",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 14 Pro+ 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "PU",
+          "pim": "415779"
+        }
+      ]
+    },
+    {
+      "id": "p-557269",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 15 Pro 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "557269"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "BK",
+          "pim": "563254"
+        }
+      ]
+    },
+    {
+      "id": "p-598133",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 17 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "6+256 GB",
+          "color": "BK",
+          "pim": "598133"
+        }
+      ]
+    },
+    {
+      "id": "p-557270",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Redmi",
+      "model": "Redmi Note 15 Pro+ 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "BL",
+          "pim": "557270"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "557274"
+        }
+      ]
+    },
+    {
+      "id": "p-423226",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Xiaomi",
+      "model": "Xiaomi 15",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+256 GB",
+          "color": "BK",
+          "pim": "423226"
+        },
+        {
+          "storage": "12+256 GB",
+          "color": "WH",
+          "pim": "423232"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "GN",
+          "pim": "423237"
+        }
+      ]
+    },
+    {
+      "id": "p-582785",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Xiaomi",
+      "model": "Xiaomi 17T",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+256 GB",
+          "color": "BK",
+          "pim": "582785"
+        },
+        {
+          "storage": "12+256 GB",
+          "color": "BL",
+          "pim": "582786"
+        },
+        {
+          "storage": "12+256 GB",
+          "color": "VI",
+          "pim": "582787"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "BL",
+          "pim": "582788"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "BK",
+          "pim": "582797"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "VI",
+          "pim": "582799"
+        }
+      ]
+    },
+    {
+      "id": "p-582757",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Xiaomi",
+      "model": "Xiaomi 17T Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "VI",
+          "pim": "582757"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "BK",
+          "pim": "582767"
+        }
+      ]
+    },
+    {
+      "id": "p-565448",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Xiaomi",
+      "model": "Xiaomi 17",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "BK",
+          "pim": "565448"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "BL",
+          "pim": "565472"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "GN",
+          "pim": "565473"
+        }
+      ]
+    },
+    {
+      "id": "p-565475",
+      "brand": "Xiaomi",
+      "category": "smartphone",
+      "series": "Xiaomi",
+      "model": "Xiaomi 17 Ultra",
+      "image": "",
+      "variants": [
+        {
+          "storage": "16+512 GB",
+          "color": "BK",
+          "pim": "565475"
+        },
+        {
+          "storage": "16+512 GB",
+          "color": "GN",
+          "pim": "565476"
+        }
+      ]
+    },
+    {
+      "id": "p-583221",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "Blade A36",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+64 GB",
+          "color": "BK",
+          "pim": "583221"
+        },
+        {
+          "storage": "4+128 GB",
+          "color": "BK",
+          "pim": "573903"
+        },
+        {
+          "storage": "4+128 GB",
+          "color": "GN",
+          "pim": "573918"
+        }
+      ]
+    },
+    {
+      "id": "p-425010",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "Blade V70 Vita",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "GY",
+          "pim": "425010"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "GN",
+          "pim": "425051"
+        }
+      ]
+    },
+    {
+      "id": "p-409779",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "Blade A75 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "B",
+          "pim": "409779"
+        }
+      ]
+    },
+    {
+      "id": "p-462856",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "Blade A76 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "462856"
+        }
+      ]
+    },
+    {
+      "id": "p-576460",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "V80 Vita",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "576460"
+        },
+        {
+          "storage": "Standard",
+          "color": "CY",
+          "pim": "576463"
+        }
+      ]
+    },
+    {
+      "id": "p-433013",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "Nubia Neo 3 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "433013"
+        },
+        {
+          "storage": "Standard",
+          "color": "SV",
+          "pim": "433015"
+        }
+      ]
+    },
+    {
+      "id": "p-576465",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "V80 Max",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "576465"
+        },
+        {
+          "storage": "Standard",
+          "color": "SV",
+          "pim": "576473"
+        }
+      ]
+    },
+    {
+      "id": "p-575056",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "V80 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "575056"
+        }
+      ]
+    },
+    {
+      "id": "p-433017",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "Nubia Neo 3 GT 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "GY",
+          "pim": "433017"
+        }
+      ]
+    },
+    {
+      "id": "p-530222",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "Nubia Air",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "530222"
+        },
+        {
+          "storage": "Standard",
+          "color": "TBK",
+          "pim": "558251"
+        }
+      ]
+    },
+    {
+      "id": "p-582706",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "Nubia Neo 5 GT 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "582706"
+        }
+      ]
+    },
+    {
+      "id": "p-577858",
+      "brand": "ZTE",
+      "category": "smartphone",
+      "series": "Nubia / ZTE",
+      "model": "Nubia Air Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "577858"
+        }
+      ]
+    },
+    {
+      "id": "p-535837",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "Note 70T",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "BK",
+          "pim": "535837"
+        }
+      ]
+    },
+    {
+      "id": "p-455007",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "C71",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "GN",
+          "pim": "455007"
+        }
+      ]
+    },
+    {
+      "id": "p-417832",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "C75",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "GO",
+          "pim": "417832"
+        }
+      ]
+    },
+    {
+      "id": "p-582759",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "C100 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "GN",
+          "pim": "582759"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "GN",
+          "pim": "582768"
+        }
+      ]
+    },
+    {
+      "id": "p-432063",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "Realme 14 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+256 GB",
+          "color": "TG",
+          "pim": "432063"
+        }
+      ]
+    },
+    {
+      "id": "p-446439",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "GT 7T 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "BL",
+          "pim": "446439"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "YE",
+          "pim": "446430"
+        }
+      ]
+    },
+    {
+      "id": "p-566044",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "Realme 16 Pro 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "GY",
+          "pim": "566044"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "GY",
+          "pim": "566001"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "PU",
+          "pim": "566017"
+        }
+      ]
+    },
+    {
+      "id": "p-423064",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "Realme 14 Pro+ 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "GY",
+          "pim": "423064"
+        }
+      ]
+    },
+    {
+      "id": "p-446253",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "GT 7 5G + Watch S2",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "BK",
+          "pim": "446253"
+        }
+      ]
+    },
+    {
+      "id": "p-566082",
+      "brand": "Realme",
+      "category": "smartphone",
+      "series": "Realme",
+      "model": "Realme 16 Pro+ 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "GY",
+          "pim": "566082"
+        }
+      ]
+    },
+    {
+      "id": "p-561530",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "OPPO A",
+      "model": "A6x",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "PURPLE",
+          "pim": "561530"
+        }
+      ]
+    },
+    {
+      "id": "p-381815",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno 12F 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "381815"
+        }
+      ]
+    },
+    {
+      "id": "p-561868",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "OPPO A",
+      "model": "A6k",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+256 GB",
+          "color": "CRYSTAL BK",
+          "pim": "561868"
+        }
+      ]
+    },
+    {
+      "id": "p-561869",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "OPPO A",
+      "model": "A6",
+      "image": "",
+      "variants": [
+        {
+          "storage": "6+256 GB",
+          "color": "SAPPHIRE BK",
+          "pim": "561869"
+        },
+        {
+          "storage": "6+256 GB",
+          "color": "AURORA GOLD",
+          "pim": "561880"
+        }
+      ]
+    },
+    {
+      "id": "p-561882",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "OPPO A",
+      "model": "A6 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "6+256 GB",
+          "color": "SAPPHIRE BK",
+          "pim": "561882"
+        },
+        {
+          "storage": "6+256 GB",
+          "color": "AURORA GOLD",
+          "pim": "561884"
+        }
+      ]
+    },
+    {
+      "id": "p-529454",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "OPPO A",
+      "model": "A6 Pro 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "529454"
+        },
+        {
+          "storage": "Standard",
+          "color": "WH",
+          "pim": "530109"
+        }
+      ]
+    },
+    {
+      "id": "p-554088",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "OPPO A",
+      "model": "A6 Pro 5G (SMART)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "SV",
+          "pim": "554088"
+        }
+      ]
+    },
+    {
+      "id": "p-559839",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno15 F 5G + Buds3",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "559839"
+        }
+      ]
+    },
+    {
+      "id": "p-564914",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno15 F 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "564914"
+        },
+        {
+          "storage": "Standard",
+          "color": "BL",
+          "pim": "564916"
+        }
+      ]
+    },
+    {
+      "id": "p-559844",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno15 FS 5G + Buds3",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "559844"
+        }
+      ]
+    },
+    {
+      "id": "p-564919",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno15 FS 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "564919"
+        },
+        {
+          "storage": "Standard",
+          "color": "BL",
+          "pim": "564920"
+        }
+      ]
+    },
+    {
+      "id": "p-559837",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno15 5G + Buds3",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "WH",
+          "pim": "559837"
+        }
+      ]
+    },
+    {
+      "id": "p-564896",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno15 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "564896"
+        },
+        {
+          "storage": "Standard",
+          "color": "WH",
+          "pim": "564912"
+        }
+      ]
+    },
+    {
+      "id": "p-588834",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno16 FS 5G - Bundle",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "PUR",
+          "pim": "588834"
+        }
+      ]
+    },
+    {
+      "id": "p-564892",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno15 Pro 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BL",
+          "pim": "564892"
+        },
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "564894"
+        }
+      ]
+    },
+    {
+      "id": "p-597298",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno16 F 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "597298"
+        },
+        {
+          "storage": "Standard",
+          "color": "WH",
+          "pim": "597332"
+        }
+      ]
+    },
+    {
+      "id": "p-588747",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno16 5G - Bundle",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "WHT",
+          "pim": "588747"
+        },
+        {
+          "storage": "Standard",
+          "color": "PUR",
+          "pim": "588833"
+        }
+      ]
+    },
+    {
+      "id": "p-588743",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Reno",
+      "model": "Reno16 Pro 5G - Bundle",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "WHT",
+          "pim": "588743"
+        },
+        {
+          "storage": "Standard",
+          "color": "STBK",
+          "pim": "588831"
+        }
+      ]
+    },
+    {
+      "id": "p-548102",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Find",
+      "model": "Find X9 Pro 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "SV",
+          "pim": "548102"
+        },
+        {
+          "storage": "Standard",
+          "color": "WH",
+          "pim": "548112"
+        }
+      ]
+    },
+    {
+      "id": "p-580374",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Find",
+      "model": "Find X9 Ultra 5G Box",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BR",
+          "pim": "580374"
+        }
+      ]
+    },
+    {
+      "id": "p-580383",
+      "brand": "Oppo",
+      "category": "smartphone",
+      "series": "Find",
+      "model": "Find X9 Ultra 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BR",
+          "pim": "580383"
+        },
+        {
+          "storage": "Standard",
+          "color": "OR",
+          "pim": "580384"
+        }
+      ]
+    },
+    {
+      "id": "p-565937",
+      "brand": "Google",
+      "category": "smartphone",
+      "series": "Pixel",
+      "model": "Pixel 10a",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "565937"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "565983"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GY",
+          "pim": "565990"
+        }
+      ]
+    },
+    {
+      "id": "p-498189",
+      "brand": "Google",
+      "category": "smartphone",
+      "series": "Pixel",
+      "model": "Pixel 10",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "PU",
+          "pim": "498189"
+        },
+        {
+          "storage": "128 GB",
+          "color": "BL",
+          "pim": "498197"
+        },
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "498198"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GN",
+          "pim": "498200"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "498203"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Blu Indaco",
+          "pim": "498201"
+        }
+      ]
+    },
+    {
+      "id": "p-498213",
+      "brand": "Google",
+      "category": "smartphone",
+      "series": "Pixel",
+      "model": "Pixel 10 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "512 GB",
+          "color": "GY",
+          "pim": "498213"
+        }
+      ]
+    },
+    {
+      "id": "p-498219",
+      "brand": "Google",
+      "category": "smartphone",
+      "series": "Pixel",
+      "model": "Pixel 10 Pro XL",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "SV",
+          "pim": "498219"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "498223"
+        }
+      ]
+    },
+    {
+      "id": "p-596605",
+      "brand": "Google",
+      "category": "smartphone",
+      "series": "Pixel",
+      "model": "Pixel 11",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "596605"
+        },
+        {
+          "storage": "256 GB",
+          "color": "VI",
+          "pim": "596676"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GN",
+          "pim": "596683"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "596699"
+        },
+        {
+          "storage": "512 GB",
+          "color": "VI",
+          "pim": "596703"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Rosa Ibisco",
+          "pim": "596698"
+        }
+      ]
+    },
+    {
+      "id": "p-596708",
+      "brand": "Google",
+      "category": "smartphone",
+      "series": "Pixel",
+      "model": "Pixel 11 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "596708"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GY",
+          "pim": "596725"
+        },
+        {
+          "storage": "256 GB",
+          "color": "PK",
+          "pim": "596730"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "596731"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Verde Oliva",
+          "pim": "596729"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Grigio Nebbia",
+          "pim": "596732"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Verde Oliva",
+          "pim": "596733"
+        }
+      ]
+    },
+    {
+      "id": "p-596807",
+      "brand": "Google",
+      "category": "smartphone",
+      "series": "Pixel",
+      "model": "Pixel 11 Pro XL",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "596807"
+        },
+        {
+          "storage": "256 GB",
+          "color": "GY",
+          "pim": "596845"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "596877"
+        },
+        {
+          "storage": "256 GB",
+          "color": "Verde Oliva",
+          "pim": "596857"
+        },
+        {
+          "storage": "512 GB",
+          "color": "Verde Oliva",
+          "pim": "596896"
+        }
+      ]
+    },
+    {
+      "id": "p-530378",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "X5c Plus",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "BK",
+          "pim": "530378"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "CY",
+          "pim": "530367"
+        }
+      ]
+    },
+    {
+      "id": "p-556863",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "X5c Plus (TIM)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "BK",
+          "pim": "556863"
+        },
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "596000"
+        }
+      ]
+    },
+    {
+      "id": "p-521209",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 400 Smart",
+      "image": "",
+      "variants": [
+        {
+          "storage": "6+128 GB",
+          "color": "BK",
+          "pim": "521209"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "592000"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "GO",
+          "pim": "592001"
+        }
+      ]
+    },
+    {
+      "id": "p-521216",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 400 Smart + cover + Choice X7 Lite",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "GO",
+          "pim": "521216"
+        }
+      ]
+    },
+    {
+      "id": "p-434813",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 400 Lite (SMART)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "434813"
+        }
+      ]
+    },
+    {
+      "id": "p-593444",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 600 Smart (SMART)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "128 GB",
+          "color": "BK",
+          "pim": "593444"
+        }
+      ]
+    },
+    {
+      "id": "p-590563",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 600 Smart",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "BK",
+          "pim": "590563"
+        },
+        {
+          "storage": "4+128 GB",
+          "color": "SV",
+          "pim": "590565"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "BK",
+          "pim": "590573"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "SV",
+          "pim": "590575"
+        }
+      ]
+    },
+    {
+      "id": "p-427325",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 400 Lite",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "GY",
+          "pim": "427325"
+        }
+      ]
+    },
+    {
+      "id": "p-559754",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "Magic",
+      "model": "Magic8 Lite 256 Bundle",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "GN",
+          "pim": "559754"
+        }
+      ]
+    },
+    {
+      "id": "p-574056",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 600 Lite 256 + Watch 2i",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "574056"
+        },
+        {
+          "storage": "Standard",
+          "color": "GY",
+          "pim": "574062"
+        },
+        {
+          "storage": "Standard",
+          "color": "GN",
+          "pim": "574064"
+        }
+      ]
+    },
+    {
+      "id": "p-559758",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "Magic",
+      "model": "Magic8 Lite 512 Bundle",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "559758"
+        },
+        {
+          "storage": "Standard",
+          "color": "GN",
+          "pim": "559759"
+        }
+      ]
+    },
+    {
+      "id": "p-559981",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 400 + Choice Clip New",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "BK",
+          "pim": "559981"
+        },
+        {
+          "storage": "Standard",
+          "color": "SV",
+          "pim": "559982"
+        },
+        {
+          "storage": "Standard",
+          "color": "GO",
+          "pim": "559983"
+        }
+      ]
+    },
+    {
+      "id": "p-578659",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 600 + Watch 2i",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "578659"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "GO",
+          "pim": "578661"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "OR",
+          "pim": "578662"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "BK",
+          "pim": "578668"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "GO",
+          "pim": "578669"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "OR",
+          "pim": "578671"
+        }
+      ]
+    },
+    {
+      "id": "p-578677",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "HONOR",
+      "model": "Honor 600 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "BK",
+          "pim": "578677"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "GO",
+          "pim": "578680"
+        }
+      ]
+    },
+    {
+      "id": "p-589408",
+      "brand": "Honor",
+      "category": "smartphone",
+      "series": "Magic",
+      "model": "Magic V6",
+      "image": "",
+      "variants": [
+        {
+          "storage": "16+512 GB",
+          "color": "BK",
+          "pim": "589408"
+        }
+      ]
+    },
+    {
+      "id": "p-434811",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Moto E15 4G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "2+64 GB",
+          "color": "LA",
+          "pim": "434811"
+        }
+      ]
+    },
+    {
+      "id": "p-435052",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Moto G05",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "GN",
+          "pim": "435052"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "RD",
+          "pim": "527885"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "GN",
+          "pim": "425245"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "BL",
+          "pim": "531133"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "GN",
+          "pim": "531134"
+        }
+      ]
+    },
+    {
+      "id": "p-553357",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Moto G06",
+      "image": "",
+      "variants": [
+        {
+          "storage": "4+128 GB",
+          "color": "BL",
+          "pim": "553357"
+        },
+        {
+          "storage": "4+128 GB",
+          "color": "GN",
+          "pim": "553364"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "BL",
+          "pim": "553366"
+        },
+        {
+          "storage": "4+256 GB",
+          "color": "GN",
+          "pim": "553369"
+        }
+      ]
+    },
+    {
+      "id": "p-434965",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Moto G56 5G",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "434965"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "GY",
+          "pim": "583135"
+        }
+      ]
+    },
+    {
+      "id": "p-420146",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Thinkphone 25",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "420146"
+        }
+      ]
+    },
+    {
+      "id": "p-423950",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Moto G15",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+512 GB",
+          "color": "BL",
+          "pim": "423950"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "GY",
+          "pim": "425248"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "GN",
+          "pim": "425254"
+        }
+      ]
+    },
+    {
+      "id": "p-531135",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "G15 Power",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+512 GB",
+          "color": "GY",
+          "pim": "531135"
+        },
+        {
+          "storage": "8+512 GB",
+          "color": "GN",
+          "pim": "531136"
+        }
+      ]
+    },
+    {
+      "id": "p-454981",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Edge 60 Fusion",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "GY",
+          "pim": "454981"
+        }
+      ]
+    },
+    {
+      "id": "p-564371",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Moto g57",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "GN",
+          "pim": "564371"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "BL",
+          "pim": "564385"
+        }
+      ]
+    },
+    {
+      "id": "p-554536",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Moto G86 5G (TIM)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "SV",
+          "pim": "554536"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "GO",
+          "pim": "554538"
+        }
+      ]
+    },
+    {
+      "id": "p-564386",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Moto g77",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "564386"
+        },
+        {
+          "storage": "8+256 GB",
+          "color": "BL",
+          "pim": "564387"
+        }
+      ]
+    },
+    {
+      "id": "p-583298",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Moto G87",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "BK",
+          "pim": "583298"
+        }
+      ]
+    },
+    {
+      "id": "p-430362",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Edge 60 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "GN",
+          "pim": "430362"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "PU",
+          "pim": "430364"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "SH",
+          "pim": "562228"
+        },
+        {
+          "storage": "12+512 GB",
+          "color": "WA",
+          "pim": "562333"
+        }
+      ]
+    },
+    {
+      "id": "p-369523",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Razr 50 Ultra",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "BL",
+          "pim": "369523"
+        }
+      ]
+    },
+    {
+      "id": "p-551614",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Edge 70 (TIM)",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "GY",
+          "pim": "551614"
+        },
+        {
+          "storage": "Standard",
+          "color": "GN",
+          "pim": "551615"
+        }
+      ]
+    },
+    {
+      "id": "p-425620",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Razr 60 Ultra",
+      "image": "",
+      "variants": [
+        {
+          "storage": "Standard",
+          "color": "GN",
+          "pim": "425620"
+        }
+      ]
+    },
+    {
+      "id": "p-564674",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Signature",
+      "image": "",
+      "variants": [
+        {
+          "storage": "16+512 GB",
+          "color": "BK",
+          "pim": "564674"
+        }
+      ]
+    },
+    {
+      "id": "p-581409",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Razr 70",
+      "image": "",
+      "variants": [
+        {
+          "storage": "8+256 GB",
+          "color": "GN",
+          "pim": "581409"
+        }
+      ]
+    },
+    {
+      "id": "p-582408",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Razr 70 plus",
+      "image": "",
+      "variants": [
+        {
+          "storage": "12+512 GB",
+          "color": "GN",
+          "pim": "582408"
+        }
+      ]
+    },
+    {
+      "id": "p-583136",
+      "brand": "Motorola",
+      "category": "smartphone",
+      "series": "Moto / Edge / Razr",
+      "model": "Razr Fold",
+      "image": "",
+      "variants": [
+        {
+          "storage": "16+512 GB",
+          "color": "WH",
+          "pim": "583136"
+        },
+        {
+          "storage": "16+512 GB",
+          "color": "BK",
+          "pim": "583137"
+        }
+      ]
+    },
+    {
+      "id": "p-594897",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 18",
+      "model": "iPhone 18 Pro",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "GL",
+          "pim": "594897"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BG",
+          "pim": "594896"
+        },
+        {
+          "storage": "256 GB",
+          "color": "SV",
+          "pim": "594895"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "594894"
+        },
+        {
+          "storage": "512 GB",
+          "color": "GL",
+          "pim": "594901"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BG",
+          "pim": "594900"
+        },
+        {
+          "storage": "512 GB",
+          "color": "SV",
+          "pim": "594899"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "594898"
+        },
+        {
+          "storage": "1 TB",
+          "color": "GL",
+          "pim": "594916"
+        },
+        {
+          "storage": "1 TB",
+          "color": "BG",
+          "pim": "594915"
+        },
+        {
+          "storage": "1 TB",
+          "color": "SV",
+          "pim": "594914"
+        },
+        {
+          "storage": "1 TB",
+          "color": "BK",
+          "pim": "594912"
+        },
+        {
+          "storage": "2 TB",
+          "color": "GL",
+          "pim": "594921"
+        },
+        {
+          "storage": "2 TB",
+          "color": "BG",
+          "pim": "594920"
+        },
+        {
+          "storage": "2 TB",
+          "color": "SV",
+          "pim": "594918"
+        },
+        {
+          "storage": "2 TB",
+          "color": "BK",
+          "pim": "594917"
+        }
+      ]
+    },
+    {
+      "id": "p-594925",
+      "brand": "Apple",
+      "category": "smartphone",
+      "series": "iPhone 18",
+      "model": "iPhone 18 Pro Max",
+      "image": "",
+      "variants": [
+        {
+          "storage": "256 GB",
+          "color": "GL",
+          "pim": "594925"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BG",
+          "pim": "594924"
+        },
+        {
+          "storage": "256 GB",
+          "color": "SV",
+          "pim": "594923"
+        },
+        {
+          "storage": "256 GB",
+          "color": "BK",
+          "pim": "594922"
+        },
+        {
+          "storage": "512 GB",
+          "color": "GL",
+          "pim": "594933"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BG",
+          "pim": "594932"
+        },
+        {
+          "storage": "512 GB",
+          "color": "SV",
+          "pim": "594931"
+        },
+        {
+          "storage": "512 GB",
+          "color": "BK",
+          "pim": "594926"
+        },
+        {
+          "storage": "1 TB",
+          "color": "GL",
+          "pim": "594937"
+        },
+        {
+          "storage": "1 TB",
+          "color": "BG",
+          "pim": "594936"
+        },
+        {
+          "storage": "1 TB",
+          "color": "SV",
+          "pim": "594935"
+        },
+        {
+          "storage": "1 TB",
+          "color": "BK",
+          "pim": "594934"
+        },
+        {
+          "storage": "2 TB",
+          "color": "GL",
+          "pim": "596068"
+        },
+        {
+          "storage": "2 TB",
+          "color": "BG",
+          "pim": "596065"
+        },
+        {
+          "storage": "2 TB",
+          "color": "SV",
+          "pim": "594939"
+        },
+        {
+          "storage": "2 TB",
+          "color": "BK",
+          "pim": "594938"
+        }
       ]
     }
   ]
