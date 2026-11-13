@@ -1027,7 +1027,7 @@
       const families = state.families.filter(f =>
         f.brandId === brand.id &&
         (state.selectedCategory === 'Tutti' || f.category === state.selectedCategory)
-      );
+      ).sort(compareFamiliesNewest);
 
       return `
         <section class="space-y-4">
@@ -1124,7 +1124,7 @@
           </div>
 
           <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
-            ${family.models.map(model => {
+            ${[...family.models].sort(compareModelsNewest).map(model => {
               const firstVariantColor = model.memories[0]?.variants[0]?.colorHex || '#2B2E34';
               const totalVariants = model.memories.reduce((acc, m) => acc + m.variants.length, 0);
               const memList = model.memories.map(m => m.size).join(' · ');
@@ -2042,16 +2042,61 @@
     let officialFamilies = [];
     function safeRead(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } }
     function slugify(s) { return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
+    // Color codes used in the colleague's CSV and regular product color names.
+    // No invented shade for ambiguous or unknown abbreviations: neutral fallback.
     function inferColorHex(name) {
-      const n = String(name).toLowerCase();
-      if (/bianc|white/.test(n)) return '#F3F4F6';
-      if (/ner|black/.test(n)) return '#222426';
-      if (/blu|blue/.test(n)) return '#517CB0';
-      if (/ross|red/.test(n)) return '#CB3838';
-      if (/verd|green/.test(n)) return '#6B9C81';
-      if (/rosa|pink/.test(n)) return '#DFA9BA';
-      if (/grig|gray|grey/.test(n)) return '#9299A3';
+      const raw = String(name || '').trim();
+      const n = raw.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ');
+      const code = raw.toUpperCase().trim();
+      const exact = {
+        BK:'#24262B', TBK:'#24262B', STBK:'#24262B', 'SAPPHIRE BK':'#28354F', 'CRYSTAL BK':'#252930',
+        BL:'#426DA4', BB:'#1E3450', BLBK:'#24364F', AZ:'#6BAED6', CY:'#8CD4E1',
+        GN:'#6C9875', OL:'#74816A', TG:'#497A6A',
+        GY:'#9398A2', GR:'#8E949A', SV:'#C6C9D0', SL:'#CCD0D7',
+        WH:'#F3F3F0', WHT:'#F3F3F0',
+        RD:'#C64043', PK:'#E3A6B9', PU:'#9575B5', PUR:'#9575B5', VI:'#967FC0', PURPLE:'#9575B5',
+        GO:'#CFAD65', GD:'#CFAD65', 'AURORA GOLD':'#D4B473',
+        OR:'#DB8950', YE:'#E8CC60',
+        LI:'#C1B2E3', LA:'#C2A6DA', LAV:'#C2A6DA',
+        BR:'#987660',
+        // Codes with unclear or manufacturer-specific meanings (e.g. GL/BG/NA/CH/GG/MI/SH/WA)
+        // deliberately stay neutral until a verified mapping is supplied.
+      };
+      if (Object.prototype.hasOwnProperty.call(exact,code)) return exact[code];
+      if (/ner|black|grafite|graphite|sideral|antracit|carbon|midnight/.test(n)) return '#292C35';
+      if (/bianc|white|crema|cream|avorio|ivory/.test(n)) return '#F4F0E6';
+      if (/blu|blue|navy|indaco|sapphire|azzurr|celeste/.test(n)) return '#527FAE';
+      if (/ross|red|coral|burgundy/.test(n)) return '#C7484F';
+      if (/verd|green|salvia|sage|olive|oliva/.test(n)) return '#779781';
+      if (/rosa|pink|ibisco|fucsia/.test(n)) return '#DDA2B3';
+      if (/viol|purple|lavand|lilac|lilla/.test(n)) return '#A18ABB';
+      if (/argento|silver|titanio natura|natural titanium/.test(n)) return '#C3C7CA';
+      if (/grig|gray|grey|titanio|titanium|nebbia/.test(n)) return '#969BA4';
+      if (/oro|gold|champagne|sabbia|sand/.test(n)) return '#D4B77E';
+      if (/aranc|orange|tramonto/.test(n)) return '#E49A65';
+      if (/giall|yellow/.test(n)) return '#E8C858';
+      if (/marron|brown|bronze/.test(n)) return '#90715B';
       return '#9CA3AF';
+    }
+    // Latest numbered generation first within each family (e.g. iPhone 18, 17, 16;
+    // Galaxy S26, S25; Galaxy A57, A56). Names without a generation follow.
+    function generationNumber(name) {
+      const cleaned = String(name || '').replace(/\b(?:4G|5G|LTE|256GB|512GB|128GB)\b/gi, '');
+      const match = cleaned.match(/(?:^|\s|[-])(?:[A-Za-z]{0,8}\s*)?(\d{1,3})(?=\b|[a-z+])/i);
+      return match ? Number(match[1]) : -1;
+    }
+    function compareModelsNewest(a,b) {
+      const genDiff = generationNumber(b.name) - generationNumber(a.name);
+      return genDiff || b.name.localeCompare(a.name, 'it', {numeric:true, sensitivity:'base'});
+    }
+    function compareFamiliesNewest(a,b) {
+      // Only use the generation when the family shares the same textual prefix.
+      const prefix = f => f.name.replace(/\d.*$/,'').trim().toLowerCase();
+      if (prefix(a) === prefix(b)) {
+        const n = generationNumber(b.name) - generationNumber(a.name);
+        if (n) return n;
+      }
+      return a.name.localeCompare(b.name,'it',{numeric:true,sensitivity:'base'});
     }
     function normalizeCategory(c) {
       const key = String(c).toLowerCase().replace(/[^a-z]/g,'');
@@ -2085,9 +2130,11 @@
           const size = String(v.storage || 'Standard');
           let mem = model.memories.find(m => m.size === size);
           if (!mem) {mem={size,variants:[]};model.memories.push(mem);}
-          if (!mem.variants.some(x => x.pim === String(v.pim))) mem.variants.push({id:'pim-'+v.pim,colorName:String(v.color||'Colore'),colorHex:inferColorHex(v.color),pim:String(v.pim),source:'CATALOGO'});
+          if (!mem.variants.some(x => x.pim === String(v.pim))) mem.variants.push({id:'pim-'+v.pim,colorName:String(v.color||'Colore'),colorHex:(/^#[0-9a-f]{6}$/i.test(String(v.colorHex||'')) ? v.colorHex : inferColorHex(v.color)),pim:String(v.pim),source:'CATALOGO'});
         }
       }
+      for (const family of families) family.models.sort(compareModelsNewest);
+      families.sort((a,b) => a.brandId.localeCompare(b.brandId,'it') || compareFamiliesNewest(a,b));
       return families;
     }
     function saveManualCatalog() {
