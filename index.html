@@ -2,8 +2,8 @@
 <html lang="it" class="light">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
-  <title>Codici MW 2.0</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>FindMW</title>
   <link rel="manifest" href="./manifest.json" />
   <link rel="icon" href="./assets/icons/icon-192.png" />
   <link rel="apple-touch-icon" href="./assets/icons/icon-192.png" />
@@ -62,10 +62,20 @@
 
   <style>
     /* Base Reset & Smooth Theme Transitions */
+    html { touch-action: manipulation; }
     html, body {
       font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
       overflow-x: hidden;
       -webkit-tap-highlight-color: transparent;
+      overscroll-behavior-x: none;
+    }
+    body {
+      text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    img {
+      user-select: none;
+      -webkit-user-drag: none;
     }
 
     /* Hide Scrollbars cleanly for horizontal pill rows */
@@ -122,19 +132,16 @@
         <button
           onclick="navigateTo('home')"
           class="flex items-center gap-2.5 text-left group focus:outline-none"
-          aria-label="Torna alla Homepage Codici MW 2.0"
+          aria-label="Torna alla Homepage FindMW"
         >
           <!-- Geometric MediaWorld Red Emblem -->
-          <div class="w-9 h-9 rounded-xl bg-mw-red flex items-center justify-center shadow-sm group-hover:bg-mw-redHover transition-colors shrink-0">
-            <svg class="w-5 h-5 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.3" stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 7h16M4 12h10M4 17h7" />
-              <rect x="15" y="12" width="5" height="5" rx="1" fill="currentColor" stroke="none" />
-            </svg>
+          <div class="w-9 h-9 rounded-xl bg-white dark:bg-dark-subtle border border-light-border dark:border-dark-border flex items-center justify-center shadow-sm overflow-hidden shrink-0">
+            <img src="./assets/icons/icon-192.png" alt="Logo FindMW" class="w-full h-full object-cover" />
           </div>
 
           <div class="flex items-center gap-2">
-            <span class="font-extrabold text-lg sm:text-xl tracking-tight text-light-text dark:text-dark-text">
-              Codici <span class="text-mw-red">MW</span>
+            <span class="font-extrabold text-xs sm:text-sm tracking-tight text-light-text dark:text-dark-text">
+              Find<span class="text-mw-red">MW</span>
             </span>
             <span class="px-1.5 py-0.5 text-[11px] font-bold tracking-wider uppercase rounded-md bg-mw-red text-white leading-none">
               2.0
@@ -145,7 +152,7 @@
         <!-- Sober Prototype Indicator -->
         <span class="hidden lg:inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full text-[11px] font-medium bg-light-subtle dark:bg-dark-subtle text-light-muted dark:text-dark-muted border border-light-border dark:border-dark-border">
           <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-          Catalogo PIM reale
+          Catalogo PIM
         </span>
       </div>
 
@@ -174,7 +181,7 @@
           class="px-3.5 py-1.5 rounded-lg text-sm font-semibold transition-all flex items-center gap-1.5"
         >
           <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 5v14M5 12h14"/></svg>
-          Aggiungi Prodotto
+          Aggiungi
         </button>
       </nav>
 
@@ -182,7 +189,7 @@
       <div class="flex items-center gap-2">
         <span class="lg:hidden inline-flex items-center gap-1 px-2 py-0.5 rounded-md text-[10px] font-semibold uppercase tracking-wide bg-light-subtle dark:bg-dark-subtle text-light-muted dark:text-dark-muted border border-light-border dark:border-dark-border">
           <span class="w-1.5 h-1.5 rounded-full bg-amber-500"></span>
-          Codici MW
+          FindMW
         </span>
 
         <button
@@ -208,7 +215,7 @@
   <!-- ===================================================================== -->
   <!-- MAIN APPLICATION VIEWPORT                                             -->
   <!-- ===================================================================== -->
-  <main id="app-main" class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 pt-5 sm:pt-7 pb-safe-nav md:pb-12">
+  <main id="app-main" class="flex-1 max-w-6xl w-full mx-auto px-4 sm:px-6 pt-4 sm:pt-6 pb-safe-nav md:pb-10">
     <!-- Dynamic screen content injected cleanly via JS state engine -->
   </main>
 
@@ -216,7 +223,7 @@
   <!-- MOBILE FIXED BOTTOM NAVIGATION BAR                                    -->
   <!-- ===================================================================== -->
   <nav class="md:hidden fixed bottom-0 inset-x-0 z-40 bg-white/95 dark:bg-dark-card/95 backdrop-blur-md border-t border-light-border dark:border-dark-border bottom-nav-safe" aria-label="Navigazione mobile">
-    <div class="grid grid-cols-4 h-16">
+    <div class="grid grid-cols-3 h-16 max-w-md mx-auto">
       <button
         id="nav-mobile-catalog"
         onclick="navigateTo('home')"
@@ -764,7 +771,7 @@
           <!-- TOP SECTION: Immediate Full-Width Search Bar -->
           <section class="bg-white dark:bg-dark-card rounded-2xl p-4 sm:p-6 border border-light-border dark:border-dark-border shadow-card-light flex flex-col justify-between gap-3.5">
             <div class="flex items-center justify-between gap-2">
-              <h1 class="text-base sm:text-xl font-extrabold tracking-tight">
+              <h1 class="text-sm sm:text-lg font-extrabold tracking-tight">
                 Ricerca rapida codici PIM
               </h1>
               <span class="text-[11px] font-mono text-light-muted dark:text-dark-muted hidden sm:inline">
@@ -782,7 +789,7 @@
                 oninput="handleHomeSearchInput(this.value)"
                 onfocus="this.parentElement.classList.add('ring-2', 'ring-mw-red/30')"
                 onblur="this.parentElement.classList.remove('ring-2', 'ring-mw-red/30')"
-                class="w-full pl-11 pr-24 py-3.5 rounded-xl bg-light-subtle/80 dark:bg-dark-subtle border border-light-border dark:border-dark-border text-sm sm:text-base font-medium placeholder:text-light-muted/75 dark:placeholder:text-dark-muted/75 focus:outline-none focus:border-mw-red transition-all"
+                class="w-full pl-11 pr-24 py-3 rounded-xl bg-light-subtle/80 dark:bg-dark-subtle border border-light-border dark:border-dark-border text-base sm:text-sm font-medium placeholder:text-light-muted/75 dark:placeholder:text-dark-muted/75 focus:outline-none focus:border-mw-red transition-all"
               />
               <button
                 onclick="navigateTo('search', { focusSearch: true })"
@@ -840,7 +847,7 @@
           <section aria-label="Marchi disponibili">
             <div class="flex items-center justify-between mb-3">
               <div class="flex items-center gap-2">
-                <h2 class="text-base sm:text-lg font-extrabold tracking-tight">
+                <h2 class="text-xs sm:text-sm font-extrabold tracking-tight">
                   Seleziona Marchio
                 </h2>
                 ${state.selectedCategory !== 'Tutti' ? renderCategoryBadge(state.selectedCategory) : ''}
@@ -1016,7 +1023,7 @@
               </div>
               <div>
                 <div class="text-xs font-bold uppercase tracking-wider text-mw-red">Step 2 · Macro-famiglia</div>
-                <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight">${brand.name}</h1>
+                <h1 class="text-xs sm:text-sm font-extrabold tracking-tight">${brand.name}</h1>
                 <p class="text-xs sm:text-sm text-light-muted dark:text-dark-muted">
                   Seleziona la linea di prodotto per visualizzare i singoli modelli
                 </p>
@@ -1055,7 +1062,7 @@
                   </div>
 
                   <div>
-                    <h2 class="text-lg sm:text-xl font-extrabold tracking-tight group-hover:text-mw-red transition-colors">
+                    <h2 class="text-xs sm:text-sm font-extrabold tracking-tight group-hover:text-mw-red transition-colors">
                       ${fam.name}
                     </h2>
                     <div class="mt-1.5 flex items-center flex-wrap gap-x-3 gap-y-1 text-xs font-medium text-light-muted dark:text-dark-muted">
@@ -1090,7 +1097,7 @@
                 <span class="text-xs font-bold uppercase tracking-wider text-mw-red">Step 3 · Modello</span>
                 ${renderCategoryBadge(family.category)}
               </div>
-              <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight">${brand.name} ${family.name}</h1>
+              <h1 class="text-xs sm:text-sm font-extrabold tracking-tight">${brand.name} ${family.name}</h1>
               <p class="text-xs sm:text-sm text-light-muted dark:text-dark-muted">
                 Seleziona il dispositivo specifico per accedere a tagli di memoria e codici PIM
               </p>
@@ -1123,7 +1130,7 @@
 
                   <div class="space-y-2">
                     <div class="flex items-start justify-between gap-2">
-                      <h2 class="text-base sm:text-lg font-extrabold tracking-tight group-hover:text-mw-red transition-colors">
+                      <h2 class="text-xs sm:text-sm font-extrabold tracking-tight group-hover:text-mw-red transition-colors">
                         ${model.name}
                       </h2>
                       <span class="w-7 h-7 rounded-lg bg-light-subtle dark:bg-dark-subtle group-hover:bg-mw-red group-hover:text-white flex items-center justify-center text-light-muted dark:text-dark-muted transition-colors shrink-0">
@@ -1171,7 +1178,7 @@
                 <span class="text-xs font-semibold text-light-muted dark:text-dark-muted">${brand.name} · ${family.name}</span>
               </div>
 
-              <h1 class="text-xl sm:text-2xl font-extrabold tracking-tight leading-tight">
+              <h1 class="text-xs sm:text-sm font-extrabold tracking-tight leading-tight">
                 ${model.name}
               </h1>
 
@@ -1243,7 +1250,7 @@
 
                       <div class="min-w-0">
                         <div class="flex items-center gap-2 flex-wrap">
-                          <span class="font-bold text-sm sm:text-base truncate">${variant.colorName}</span>
+                          <span class="font-bold text-xs sm:text-sm truncate">${variant.colorName}</span>
                           ${renderSourceBadge(vSource)}
                         </div>
                         <div class="text-xs text-light-muted dark:text-dark-muted mt-0.5">
@@ -1256,14 +1263,14 @@
                     <div class="flex items-center gap-2 shrink-0">
                       <div class="px-3 py-1.5 rounded-xl bg-light-subtle dark:bg-dark-subtle border border-light-border dark:border-dark-border text-right">
                         <div class="text-[9px] font-bold uppercase tracking-wider text-light-muted dark:text-dark-muted leading-none mb-0.5">PIM</div>
-                        <div class="pim-code text-base sm:text-lg font-bold text-light-text dark:text-dark-text leading-none">
+                        <div class="pim-code text-xs sm:text-sm font-bold text-light-text dark:text-dark-text leading-none">
                           ${variant.pim}
                         </div>
                       </div>
 
                       <button
                         onclick="copyPimCode('${variant.pim}', this)"
-                        class="h-10 px-3.5 rounded-xl bg-mw-red hover:bg-mw-redHover text-white text-xs sm:text-sm font-bold shadow-sm transition-all flex items-center gap-1.5 active:scale-95"
+                        class="h-9 px-3 rounded-xl bg-mw-red hover:bg-mw-redHover text-white text-xs sm:text-sm font-bold shadow-sm transition-all flex items-center gap-1.5 active:scale-95"
                       >
                         <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
                         <span>Copia</span>
@@ -1327,7 +1334,7 @@
           <!-- Search Input Card -->
           <div class="bg-white dark:bg-dark-card rounded-2xl p-4 sm:p-5 border border-light-border dark:border-dark-border shadow-card-light space-y-3.5">
             <div class="flex items-center justify-between gap-2">
-              <h1 class="text-lg sm:text-xl font-extrabold tracking-tight">Ricerca Codici PIM</h1>
+              <h1 class="text-xs sm:text-sm font-extrabold tracking-tight">Ricerca PIM</h1>
               <span class="text-xs font-bold px-2.5 py-1 rounded-lg bg-light-subtle dark:bg-dark-subtle text-light-muted dark:text-dark-muted">
                 ${results.length} ${results.length === 1 ? 'risultato' : 'risultati'}
               </span>
@@ -1343,7 +1350,7 @@
                 value="${escapeHtml(state.searchQuery)}"
                 placeholder="Digita modello (es. iPhone 16e), colore, memoria o codice PIM a 6 cifre..."
                 oninput="updateSearchQuery(this.value)"
-                class="w-full pl-11 pr-11 py-3.5 rounded-xl bg-light-subtle/80 dark:bg-dark-subtle border border-light-border dark:border-dark-border text-sm sm:text-base font-medium focus:outline-none focus:border-mw-red focus:ring-2 focus:ring-mw-red/20 transition-all"
+                class="w-full pl-11 pr-11 py-3 rounded-xl bg-light-subtle/80 dark:bg-dark-subtle border border-light-border dark:border-dark-border text-base sm:text-sm font-medium focus:outline-none focus:border-mw-red focus:ring-2 focus:ring-mw-red/20 transition-all"
               />
               ${state.searchQuery ? `
                 <button
@@ -1449,7 +1456,7 @@
 
               <button
                 onclick="navigateTo('catalog', { brandId: '${item.brandId}', familyId: '${item.familyId}', modelId: '${item.modelId}', memorySize: '${item.memorySize}' })"
-                class="text-left font-extrabold text-sm sm:text-base hover:text-mw-red transition-colors block truncate max-w-full"
+                class="text-left font-extrabold text-xs sm:text-sm hover:text-mw-red transition-colors block truncate max-w-full"
               >
                 ${item.modelName} <span class="font-semibold text-light-muted dark:text-dark-muted">· ${item.memorySize}</span>
               </button>
@@ -1468,11 +1475,11 @@
           <div class="flex items-center justify-between sm:justify-end gap-2 pt-2.5 sm:pt-0 border-t sm:border-t-0 border-light-border/70 dark:border-dark-border/70 shrink-0">
             <div class="px-3 py-1.5 rounded-xl bg-light-subtle dark:bg-dark-subtle border border-light-border dark:border-dark-border">
               <span class="text-[10px] font-bold uppercase text-light-muted dark:text-dark-muted mr-1.5">PIM</span>
-              <span class="pim-code text-base sm:text-lg font-bold">${item.pim}</span>
+              <span class="pim-code text-xs sm:text-sm font-bold">${item.pim}</span>
             </div>
             <button
               onclick="copyPimCode('${item.pim}', this)"
-              class="h-10 px-4 rounded-xl bg-mw-red hover:bg-mw-redHover text-white text-xs sm:text-sm font-bold shadow-sm transition-all flex items-center gap-1.5 active:scale-95"
+              class="h-9 px-3 rounded-xl bg-mw-red hover:bg-mw-redHover text-white text-xs sm:text-sm font-bold shadow-sm transition-all flex items-center gap-1.5 active:scale-95"
             >
               <svg class="w-4 h-4 shrink-0" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
               <span>Copia</span>
@@ -1554,7 +1561,7 @@
                 <span class="text-xs font-bold uppercase tracking-wider text-mw-red">Inserimento Rapido</span>
                 ${renderSourceBadge('MANUALE')}
               </div>
-              <h1 class="text-lg sm:text-xl font-extrabold tracking-tight">Aggiungi Prodotto Manuale</h1>
+              <h1 class="text-xs sm:text-sm font-extrabold tracking-tight">Aggiungi Manuale</h1>
               <p class="text-xs sm:text-sm text-light-muted dark:text-dark-muted">
                 Inserisci una nuova referenza PIM salvata su questo dispositivo. Verrà contrassegnata con badge <strong class="text-emerald-600 dark:text-emerald-400">MANUALE</strong>.
               </p>
@@ -1742,7 +1749,7 @@
                     class="w-full px-4 py-3 rounded-xl bg-light-subtle/70 dark:bg-dark-subtle border ${
                       f.pimCode.length === 0 ? 'border-light-border dark:border-dark-border' :
                       isPimValid ? 'border-emerald-500 ring-2 ring-emerald-500/20' : 'border-amber-500'
-                    } pim-code text-xl font-bold tracking-widest focus:outline-none"
+                    } pim-code text-lg font-bold tracking-widest focus:outline-none"
                   />
                   <span class="absolute right-3.5 top-1/2 -translate-y-1/2 text-xs font-bold ${
                     isPimValid ? 'text-emerald-600 dark:text-emerald-400' : 'text-light-muted dark:text-dark-muted'
@@ -1756,7 +1763,7 @@
               <div class="pt-2">
                 <button
                   type="submit"
-                  class="w-full py-3.5 px-5 rounded-xl bg-mw-red hover:bg-mw-redHover text-white font-extrabold text-sm sm:text-base shadow-mw-glow transition-all flex items-center justify-center gap-2 active:scale-[0.99]"
+                  class="w-full py-3.5 px-5 rounded-xl bg-mw-red hover:bg-mw-redHover text-white font-extrabold text-xs sm:text-sm shadow-mw-glow transition-all flex items-center justify-center gap-2 active:scale-[0.99]"
                 >
                   <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
                   <span>Salva nel Catalogo Sessione</span>
@@ -2013,7 +2020,7 @@
     }
 
 
-    // Integration with original Codici MW catalogo.json; demo PIMs are never loaded.
+    // Integration with original FindMW catalogo.json; demo PIMs are never loaded.
     const MW_MANUAL_KEY = 'codici-mw-manual-v1';
     let officialFamilies = [];
     function safeRead(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } }
