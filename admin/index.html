@@ -1,1 +1,60 @@
-<!doctype html><html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Aggiungi PIM · Codici MW</title><link rel="icon" href="../assets/icons/icon-192.png"><link rel="stylesheet" href="../style.css"><style>.adminwrap{max-width:750px;margin:25px auto;padding:20px}.adminform{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:24px;display:grid;gap:15px}.adminform label{display:grid;gap:6px;font-weight:650;font-size:13px}.adminform input,.adminform select{padding:13px;border-radius:11px;border:1px solid var(--line);background:var(--panel);color:var(--ink);width:100%}.adminform button{border:0;background:var(--accent);color:white;border-radius:12px;padding:14px;font-weight:750}.adminform .hint{font-size:13px;color:var(--muted);line-height:1.5}</style></head><body><main class="adminwrap"><a href="../">← Torna al catalogo</a><h1>Aggiungi un PIM</h1><p class="subtle">Inserimento manuale. Il file scaricato deve essere caricato su GitHub per pubblicare le modifiche.</p><form class="adminform" id="form"><label>Categoria<select name="category"><option value="smartphone">Smartphone</option><option value="smartwatch">Smartwatch</option><option value="sportwatch">Sportwatch</option><option value="smartband">Smartband</option></select></label><label>Marchio<input name="brand" required placeholder="Apple"></label><label>Macro-famiglia<input name="series" required placeholder="iPhone 16"></label><label>Modello<input name="model" required placeholder="iPhone 16e"></label><label>Memoria / versione<input name="storage" placeholder="128 GB"></label><label>Colore<input name="color" required placeholder="Nero"></label><label>Codice PIM (6 cifre)<input name="pim" required pattern="[0-9]{6}" inputmode="numeric" maxlength="6" placeholder="387748"></label><label>URL immagine prodotto (facoltativo)<input name="image" type="url" placeholder="https://..."></label><button type="submit">Controlla e scarica catalogo.json</button><div class="hint">Non inserire dati riservati. Il catalogo pubblicato è pubblico. Il modulo non invia dati a un server: modifica una copia del JSON sul tuo dispositivo.</div><div id="message" role="status"></div></form></main><script src="./admin.js"></script></body></html>
+<!doctype html>
+<html lang="it" class="light">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,viewport-fit=cover,user-scalable=no">
+<meta name="theme-color" content="#DF0000"><title>Gestione catalogo · FindMW</title>
+<link rel="manifest" href="../manifest.json"><link rel="icon" href="../assets/icons/icon-192.png">
+<link rel="apple-touch-icon" href="../assets/icons/icon-192.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F5F6F8;--card:#fff;--muted:#586171;--ink:#111317;--line:#E4E7EC;--soft:#EEF0F4;--red:#DF0000;--error:#B91C1C}
+*{box-sizing:border-box}html{touch-action:manipulation}body{font-family:'Plus Jakarta Sans',system-ui,sans-serif;background:var(--bg);color:var(--ink);margin:0;-webkit-text-size-adjust:100%}
+button,input,select{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}
+header{background:var(--card);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}
+.nav{max-width:1100px;margin:auto;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.brand{display:flex;gap:8px;align-items:center;font-weight:800;font-size:17px}.brand img{width:34px;height:34px;border-radius:10px}
+.brand span{color:var(--red)}main{max-width:1100px;margin:auto;padding:20px 16px 60px}
+h1{font-size:22px;margin:0 0 8px}h2{font-size:16px;margin:0 0 12px}p{line-height:1.5}.muted{color:var(--muted)}.small{font-size:12px}.hint{font-size:12px;color:var(--muted)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;margin-top:14px;box-shadow:0 1px 3px #00000006}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+label{display:flex;flex-direction:column;gap:5px;font-size:12px;font-weight:750}input,select{width:100%;border:1px solid var(--line);border-radius:10px;padding:10px 11px;background:var(--soft);color:var(--ink);min-width:0}input:focus,select:focus{outline:2px solid #DF000038;border-color:var(--red)}
+input[type=checkbox]{width:16px;height:16px;accent-color:var(--red)}button{border:1px solid var(--line);border-radius:10px;background:var(--soft);color:var(--ink);padding:9px 13px;font-weight:750;font-size:12px}button:disabled{opacity:.5;cursor:not-allowed}
+.primary{background:var(--red);color:#fff;border-color:var(--red)}.danger{color:#B91C1C;border-color:#FECACA;background:#FFF3F3}.toolbar{display:flex;gap:8px;flex-wrap:wrap;align-items:center}.toolbar>*{flex-shrink:0}
+.count{display:flex;gap:10px;flex-wrap:wrap}.count span{background:var(--soft);border-radius:8px;padding:7px 10px;font-weight:700;font-size:12px}
+.table-wrap{overflow-x:auto;border:1px solid var(--line);border-radius:11px;margin-top:12px}table{border-collapse:collapse;min-width:820px;width:100%;font-size:12px}th,td{padding:9px 10px;text-align:left;border-bottom:1px solid var(--line)}th{background:var(--soft);font-weight:800}tr:last-child td{border-bottom:0}tr:hover td{background:#F9FAFB}.pim{font-family:'JetBrains Mono',monospace;font-weight:700}td .actions{display:flex;gap:5px}
+.status{border-left:3px solid var(--red);background:var(--soft);padding:11px 13px;font-size:12px;border-radius:8px;margin-top:12px;white-space:pre-wrap;line-height:1.5}
+.status.error{border-left-color:var(--error);color:var(--error)}.hidden{display:none!important}.row{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}.pill{display:inline-block;font-size:11px;color:var(--muted);border:1px solid var(--line);padding:4px 7px;border-radius:8px}
+.file{padding:12px;border:1px dashed var(--line);border-radius:10px;background:var(--soft);font-size:13px}hr{border:0;border-top:1px solid var(--line);margin:17px 0}
+@media(max-width:690px){main{padding:14px 12px 48px}.card{padding:12px}.grid,.grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}.grid .wide,.grid-2 .wide{grid-column:1/-1}h1{font-size:19px}button{padding:9px}table{min-width:760px}}
+</style>
+</head>
+<body>
+<header><div class="nav"><a class="brand" href="../"><img src="../assets/icons/icon-192.png" alt="FindMW">Find<span>MW</span></a><a class="pill" href="../">← Torna al catalogo</a></div></header>
+<main>
+<h1>Gestione catalogo</h1><p class="muted small">Aggiungi, modifica, importa ed elimina prodotti. Qui prepari il file aggiornato: per renderlo visibile a tutti devi caricare <b>catalogo.json</b> su GitHub.</p>
+<section class="card"><div class="row"><h2>Catalogo in lavorazione</h2><div class="toolbar"><button id="reload" title="Riparte dal catalogo pubblicato, eliminando le modifiche locali">Ricarica da GitHub</button><button id="backup">Backup JSON</button><button class="primary" id="export">Scarica catalogo.json</button></div></div><div class="count" id="counts"></div><div id="status" class="status" role="status">Caricamento catalogo in corso…</div><p class="hint">Le modifiche sono salvate come bozza su questo dispositivo, non online. Il pulsante Esporta crea il file da pubblicare. Prima di importare o cancellare molte righe, scarica un backup.</p></section>
+<section class="card"><h2 id="form-title">Aggiungi un prodotto / variante</h2>
+<form id="product-form"><div class="grid">
+<label>Categoria<select name="category" required><option value="smartphone">Smartphone</option><option value="smartwatch">Smartwatch</option><option value="ring">Ring</option></select></label>
+<label>Marca<input name="brand" required placeholder="Apple"></label><label>Serie<input name="series" placeholder="iPhone 16"></label>
+<label>Modello<input name="model" required placeholder="iPhone 16e"></label><label>Memoria / versione<input name="storage" placeholder="128 GB"></label><label>Colore<input name="color" required placeholder="Nero"></label>
+<label>PIM (6 cifre)<input name="pim" required inputmode="numeric" pattern="[0-9]{6}" maxlength="6" placeholder="387748"></label><label class="wide">URL immagine (facoltativo)<input name="image" type="url" placeholder="https://..."></label>
+</div><div class="toolbar" style="margin-top:13px"><button class="primary" type="submit" id="save-row">Aggiungi al catalogo</button><button type="button" id="cancel-edit" class="hidden">Annulla modifica</button></div></form></section>
+<section class="card"><h2>Importazione massiva Excel / CSV / JSON</h2><p class="small muted">Una riga per ogni combinazione di modello, memoria e colore. Le colonne richieste sono <b>categoria, marca, modello, colore, pim</b>; facoltative <b>serie, memoria, immagine</b>.</p>
+<div class="toolbar"><button id="template">Scarica modello CSV</button><button id="download-current-csv">Esporta CSV</button></div>
+<div style="margin-top:12px"><input class="file" id="import-file" type="file" accept=".csv,.xlsx,.xls,.json" aria-label="Carica file CSV, Excel o JSON"></div>
+<div class="grid-2" style="margin-top:12px"><label class="wide">Modalità importazione<select id="import-mode"><option value="merge">Aggiungi nuovi e aggiorna corrispondenze (consigliato)</option><option value="replace">Sostituisci l'intero catalogo</option></select></label></div>
+<div id="import-preview" class="status hidden"></div><div class="toolbar" style="margin-top:10px"><button id="apply-import" class="primary" disabled>Conferma importazione</button><button id="cancel-import" disabled>Annulla</button></div><p class="hint">Excel richiede una connessione per caricare la libreria di lettura. CSV e JSON funzionano senza librerie aggiuntive. Controlliamo PIM duplicati, righe mancanti e formato prima di applicare modifiche.</p>
+</section>
+<section class="card"><div class="row"><h2>Prodotti e modifiche massive</h2><span class="pill" id="visible-count">0 righe</span></div>
+<div class="grid-2"><label class="wide">Cerca per marca, modello, variante o PIM<input id="filter" placeholder="Es. iPhone 16e o 387748"></label><label>Categoria<select id="filter-category"><option value="">Tutte</option><option value="smartphone">Smartphone</option><option value="smartwatch">Smartwatch</option><option value="ring">Ring</option></select></label></div>
+<div class="toolbar" style="margin-top:12px"><button id="select-visible">Seleziona risultati visibili</button><button id="clear-selection">Deseleziona</button><span id="selected-count" class="pill">0 selezionati</span></div>
+<div class="toolbar" style="margin-top:10px"><label style="min-width:140px">Operazione massiva<select id="bulk-field"><option value="category">Categoria</option><option value="brand">Marca</option><option value="series">Serie</option><option value="model">Modello</option><option value="storage">Memoria</option><option value="color">Colore</option></select></label><label style="flex:1;min-width:120px">Nuovo valore<input id="bulk-value" placeholder="Nuovo valore"></label><button id="bulk-apply">Applica ai selezionati</button><button class="danger" id="bulk-delete">Elimina selezionati</button></div>
+<div class="table-wrap"><table><thead><tr><th><input id="toggle-page" type="checkbox" aria-label="Seleziona righe visibili"></th><th>Categoria</th><th>Marca</th><th>Modello</th><th>Memoria</th><th>Colore</th><th>PIM</th><th>Azioni</th></tr></thead><tbody id="rows"></tbody></table></div><div class="toolbar" style="margin-top:10px"><button id="more">Mostra altre 100 righe</button></div>
+</section>
+<p class="small muted">Non caricare dati riservati: il file JSON pubblicato su GitHub Pages sarà accessibile a chiunque conosca l'indirizzo del sito.</p>
+</main>
+<!-- SheetJS used locally in browser for XLS/XLSX parsing only; not required for CSV/JSON -->
+<script src="./manager.js" defer></script>
+</body></html>
