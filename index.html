@@ -267,7 +267,7 @@
      * 1. ALLOWED CATEGORIES (STRICT: NO TABLETS)
      * =========================================================================
      */
-    const CATEGORIES = ['Tutti', 'Smartphone', 'Smartwatch', 'Sportwatch', 'Smartband'];
+    const CATEGORIES = ['Tutti', 'Smartphone', 'Smartwatch', 'Ring'];
 
     /**
      * =========================================================================
@@ -383,6 +383,22 @@
         category === 'Sportwatch' ? 'sport-rugged' :
         category === 'Smartband' ? 'band-slim' : 'iphone-dual'
       );
+
+      // SMART RING: compact wearable ring illustration
+      if (category === 'Ring' || style === 'ring') {
+        return `
+          <svg class="${sizeClass} shrink-0" viewBox="0 0 84 100" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs>
+              <linearGradient id="ringBody" x1="12" y1="25" x2="72" y2="75" gradientUnits="userSpaceOnUse">
+                <stop offset="0" stop-color="#9CA3AF"/><stop offset="0.45" stop-color="${bodyColor}"/><stop offset="1" stop-color="#111827"/>
+              </linearGradient>
+            </defs>
+            <ellipse cx="42" cy="49" rx="29" ry="24" fill="url(#ringBody)" stroke="#94A3B8" stroke-width="1.5"/>
+            <ellipse cx="42" cy="49" rx="16" ry="13" fill="#0B0C0E" stroke="#475569" stroke-width="2"/>
+            <path d="M18 40c10-13 35-18 47-4" stroke="#FFFFFF" stroke-opacity="0.24" stroke-width="3" fill="none"/>
+          </svg>
+        `;
+      }
 
       // SMARTBAND (Slender capsule display + tapered elastomer strap)
       if (category === 'Smartband' || style === 'band-slim') {
@@ -1574,13 +1590,13 @@
             <!-- LEFT COLUMN: Structured Form (7 cols) -->
             <form onsubmit="submitManualProduct(event)" class="lg:col-span-7 bg-white dark:bg-dark-card rounded-2xl p-5 sm:p-6 border border-light-border dark:border-dark-border shadow-card-light space-y-5">
 
-              <!-- 1. Category Selector (Strictly 4 allowed categories, NO tablets) -->
+              <!-- 1. Category Selector (Smartphone / Smartwatch / Ring) -->
               <div class="space-y-2">
                 <label class="block text-xs font-bold uppercase tracking-wider text-light-muted dark:text-dark-muted">
                   1. Categoria Dispositivo *
                 </label>
-                <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
-                  ${['Smartphone', 'Smartwatch', 'Sportwatch', 'Smartband'].map(cat => {
+                <div class="grid grid-cols-3 gap-2">
+                  ${['Smartphone', 'Smartwatch', 'Ring'].map(cat => {
                     const active = f.category === cat;
                     return `
                       <button
@@ -1874,6 +1890,7 @@
     function submitManualProduct(event) {
       event.preventDefault();
       const f = state.manualForm;
+      f.category = normalizeCategory(f.category);
 
       if (!/^\d{6}$/.test(f.pimCode)) {
         showToast('Inserisci un codice PIM valido composto da esattamente 6 cifre.');
@@ -2038,7 +2055,7 @@
     }
     function normalizeCategory(c) {
       const key = String(c).toLowerCase().replace(/[^a-z]/g,'');
-      return ({smartphone:'Smartphone',smartwatch:'Smartwatch',sportwatch:'Sportwatch',smartband:'Smartband'})[key] || 'Smartphone';
+      return ({smartphone:'Smartphone',smartwatch:'Smartwatch',sportwatch:'Smartwatch',smartband:'Smartwatch',ring:'Ring',smartring:'Ring'})[key] || 'Smartphone';
     }
     function convertCatalog(data) {
       const families = [];
@@ -2060,7 +2077,7 @@
         }
         let model = family.models.find(m => m.name.toLowerCase() === String(p.model).toLowerCase());
         if (!model) {
-          model = {id:'mod-'+slugify(key+'-'+p.model),name:String(p.model),designStyle: category==='Smartphone'?'iphone-single':category==='Smartband'?'band-slim':'watch-round',source:'CATALOGO',image:p.image||'',memories:[]};
+          model = {id:'mod-'+slugify(key+'-'+p.model),name:String(p.model),designStyle: category==='Smartphone'?'iphone-single':category==='Ring'?'ring':String(p.category).toLowerCase()==='smartband'?'band-slim':String(p.category).toLowerCase()==='sportwatch'?'sport-rugged':'watch-round',source:'CATALOGO',image:p.image||'',memories:[]};
           family.models.push(model);
         }
         for (const v of p.variants) {
@@ -2082,6 +2099,7 @@
     }
     function restoreManualCatalog() {
       for (const item of safeRead(MW_MANUAL_KEY, [])) {
+        item.category = normalizeCategory(item.category);
         if (!/^\d{6}$/.test(String(item.pim)) || getAllFlattenedVariants().some(v=>v.pim===item.pim)) continue;
         let brand=state.brands.find(b=>b.name.toLowerCase()===String(item.brand).toLowerCase());
         if(!brand){brand={id:slugify(item.brand),name:item.brand,logo:`<span class="font-extrabold">${escapeHtml(item.brand)}</span>`};state.brands.push(brand);}
