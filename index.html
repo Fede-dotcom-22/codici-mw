@@ -2042,40 +2042,76 @@
     let officialFamilies = [];
     function safeRead(key, fallback) { try { return JSON.parse(localStorage.getItem(key)) ?? fallback; } catch { return fallback; } }
     function slugify(s) { return String(s).toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z0-9]+/g,'-').replace(/^-|-$/g,''); }
-    // Color codes used in the colleague's CSV and regular product color names.
-    // No invented shade for ambiguous or unknown abbreviations: neutral fallback.
+    // Palette FindMW — sigle del catalogo collega e denominazioni dei produttori.
+    // Gli HEX sono rese visive indicative, non valori cromatici ufficiali.
+    // Prima applica le corrispondenze precise; poi le parole chiave, evitando
+    // che "Blueblack", "Graygreen", "Pink Gold", ecc. diventino un colore generico.
     function inferColorHex(name) {
       const raw = String(name || '').trim();
-      const n = raw.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/\s+/g, ' ');
+      const normalized = raw.toLowerCase().normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '').replace(/[-_]+/g, ' ')
+        .replace(/\s+/g, ' ').trim();
       const code = raw.toUpperCase().trim();
       const exact = {
-        BK:'#24262B', TBK:'#24262B', STBK:'#24262B', 'SAPPHIRE BK':'#28354F', 'CRYSTAL BK':'#252930',
-        BL:'#426DA4', BB:'#1E3450', BLBK:'#24364F', AZ:'#6BAED6', CY:'#8CD4E1',
-        GN:'#6C9875', OL:'#74816A', TG:'#497A6A',
-        GY:'#9398A2', GR:'#8E949A', SV:'#C6C9D0', SL:'#CCD0D7',
+        // Quattro nuove associazioni approvate
+        BG:'#73334B', GL:'#B7DCEA', CH:'#42464B', GG:'#84978C',
+        // Altre 12 sigle approvate
+        NA:'#253C61', MI:'#A9CEBF', LI:'#C4B0DF', BB:'#202E46',
+        SL:'#C7CCD3', GR:'#8A9098', SH:'#646873', WA:'#82684F',
+        BR:'#80644E', CY:'#73C9D1', LA:'#B5A3D2', OL:'#747D57',
+        // Sigle gia riconosciute nel catalogo
+        BK:'#24262B', B:'#24262B', TBK:'#24262B', STBK:'#24262B',
+        'SAPPHIRE BK':'#28354F', 'CRYSTAL BK':'#252930',
+        BL:'#426DA4', BLBK:'#24364F', AZ:'#6BAED6',
+        GN:'#6C9875', TG:'#497A6A', GY:'#9398A2', SV:'#C6C9D0',
         WH:'#F3F3F0', WHT:'#F3F3F0',
-        RD:'#C64043', PK:'#E3A6B9', PU:'#9575B5', PUR:'#9575B5', VI:'#967FC0', PURPLE:'#9575B5',
-        GO:'#CFAD65', GD:'#CFAD65', 'AURORA GOLD':'#D4B473',
-        OR:'#DB8950', YE:'#E8CC60',
-        LI:'#C1B2E3', LA:'#C2A6DA', LAV:'#C2A6DA',
-        BR:'#987660',
-        // Codes with unclear or manufacturer-specific meanings (e.g. GL/BG/NA/CH/GG/MI/SH/WA)
-        // deliberately stay neutral until a verified mapping is supplied.
+        RD:'#C64043', PK:'#E3A6B9', PU:'#9575B5', PUR:'#9575B5',
+        VI:'#967FC0', PURPLE:'#9575B5', GO:'#CFAD65', GD:'#CFAD65',
+        'AURORA GOLD':'#D4B473', OR:'#DB8950', YE:'#E8CC60',
+        LAV:'#C2A6DA',
       };
-      if (Object.prototype.hasOwnProperty.call(exact,code)) return exact[code];
-      if (/ner|black|grafite|graphite|sideral|antracit|carbon|midnight/.test(n)) return '#292C35';
-      if (/bianc|white|crema|cream|avorio|ivory/.test(n)) return '#F4F0E6';
-      if (/blu|blue|navy|indaco|sapphire|azzurr|celeste/.test(n)) return '#527FAE';
-      if (/ross|red|coral|burgundy/.test(n)) return '#C7484F';
-      if (/verd|green|salvia|sage|olive|oliva/.test(n)) return '#779781';
-      if (/rosa|pink|ibisco|fucsia/.test(n)) return '#DDA2B3';
-      if (/viol|purple|lavand|lilac|lilla/.test(n)) return '#A18ABB';
-      if (/argento|silver|titanio natura|natural titanium/.test(n)) return '#C3C7CA';
-      if (/grig|gray|grey|titanio|titanium|nebbia/.test(n)) return '#969BA4';
-      if (/oro|gold|champagne|sabbia|sand/.test(n)) return '#D4B77E';
-      if (/aranc|orange|tramonto/.test(n)) return '#E49A65';
-      if (/giall|yellow/.test(n)) return '#E8C858';
-      if (/marron|brown|bronze/.test(n)) return '#90715B';
+      if (Object.prototype.hasOwnProperty.call(exact, code)) return exact[code];
+      // Nomi completi della palette preventiva (12 tonalita aggiuntive)
+      const specificNames = [
+        [/\b(?:icy\s?blue|icyblue|blu ghiaccio|ghiaccio|glacier|glaciale)\b/, '#C5E0EE'],
+        [/\b(?:sage|salvia)\b/, '#9AAB94'],
+        [/\b(?:natural titanium|titanio naturale|titanium|titanio)\b/, '#A9A6A1'],
+        [/\b(?:champagne)\b/, '#D7C5A1'],
+        [/\b(?:coral\s?red|coralred|rosso corallo)\b/, '#D96862'],
+        [/\b(?:pink\s?gold|pinkgold|oro rosa)\b/, '#D7A6A8'],
+        [/\b(?:bronze|bronzo)\b/, '#A47F61'],
+        [/\b(?:teal|verde petrolio|blu petrolio)\b/, '#427F83'],
+        [/\b(?:cream|crema)\b/, '#EEE3C8'],
+        [/\b(?:pearl\s?white|pearlwhite|bianco perla)\b/, '#F3F0EB'],
+        [/\b(?:orange|arancione|arancio)\b/, '#DB854B'],
+        [/\b(?:indigo|indaco)\b/, '#50548F'],
+        // Nomi estesi per le sigle appena integrate
+        [/\b(?:burgundy|burgundi|borgogna)\b/, '#73334B'],
+        [/\b(?:charcoal|carbone)\b/, '#42464B'],
+        [/\b(?:gray\s?green|grey\s?green|graygreen|grigio verde|verde grigio)\b/, '#84978C'],
+        [/\b(?:blue\s?black|blueblack|blu nero)\b/, '#202E46'],
+        [/\b(?:navy|blu notte)\b/, '#253C61'],
+        [/\b(?:mint|menta)\b/, '#A9CEBF'],
+        [/\b(?:lilac|lilla)\b/, '#C4B0DF'],
+        [/\b(?:silver|argento)\b/, '#C7CCD3'],
+        [/\b(?:shadow|ombra)\b/, '#646873'],
+        [/\b(?:walnut|noce)\b/, '#82684F'],
+        [/\b(?:cyan|ciano)\b/, '#73C9D1'],
+        [/\b(?:lavender|lavanda)\b/, '#B5A3D2'],
+        [/\b(?:olive|oliva)\b/, '#747D57'],
+      ];
+      for (const [test, hex] of specificNames) if (test.test(normalized)) return hex;
+      if (/ner|black|grafite|graphite|sideral|antracit|carbon|midnight/.test(normalized)) return '#292C35';
+      if (/bianc|white|avorio|ivory/.test(normalized)) return '#F4F0E6';
+      if (/blu|blue|azzurr|celeste|sapphire/.test(normalized)) return '#527FAE';
+      if (/ross|red/.test(normalized)) return '#C7484F';
+      if (/verd|green/.test(normalized)) return '#779781';
+      if (/rosa|pink|ibisco|fucsia/.test(normalized)) return '#DDA2B3';
+      if (/viol|purple|lilac|lilla/.test(normalized)) return '#A18ABB';
+      if (/grig|gray|grey|nebbia/.test(normalized)) return '#969BA4';
+      if (/oro|gold|sabbia|sand/.test(normalized)) return '#D4B77E';
+      if (/giall|yellow/.test(normalized)) return '#E8C858';
+      if (/marron|brown/.test(normalized)) return '#90715B';
       return '#9CA3AF';
     }
     // Latest numbered generation first within each family (e.g. iPhone 18, 17, 16;
